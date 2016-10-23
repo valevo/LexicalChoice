@@ -1,0 +1,98 @@
+file: run1605_002b
+
+text.grids	aua 200707  (students, Anna and Angelika)
+move.markables  jaw 180807
+move.items      jaw 180807
+move.grnd	jaw 180807
+move.wrld	jaw 180807
+topic.markables ---
+topic.clsfc	---
+utterance.markb /predefined/
+utterance.is_cr ---
+utterance.CRcls ---
+ref.clsf	jaw 180807
+
+
+
+
+file: run1605_003b
+
+text.grids	aua 200707  (students, Anna and Angelika)
+move.markables  jaw 180807
+move.items      jaw 180807
+move.grnd	jaw 180807
+move.wrld	jaw 180807
+topic.markables ---
+topic.clsfc	---
+utterance.markb /predefined/
+utterance.is_cr ---
+utterance.CRcls ---
+ref.clsf	jaw 180807
+
+
+
+file: run1605_004b
+
+text.grids	aua 200707  (students, Anna and Angelika)
+move.markables  jaw 180807
+move.items      jaw 180807
+move.grnd	jaw 180807
+move.wrld	jaw 180807
+topic.markables ---
+topic.clsfc	---
+utterance.markb /predefined/
+utterance.is_cr ---
+utterance.CRcls ---
+ref.clsf	jaw 180807
+
+
+
+
+file: run1605_005b
+
+text.grids	aua 200707  (students, Anna and Angelika)
+move.markables  jaw 180807
+move.items      jaw 180807
+move.grnd	jaw 180807
+move.wrld	jaw 180807
+topic.markables ---
+topic.clsfc	---
+utterance.markb /predefined/
+utterance.is_cr ---
+utterance.CRcls ---
+ref.clsf	jaw 180807
+
+
+
+
+file: run1605_006b
+
+text.grids	aua 200707  (students, Anna and Angelika)
+move.markables  jaw 180807
+move.items      jaw 180807
+move.grnd	jaw 180807
+move.wrld	jaw 180807
+topic.markables ---
+topic.clsfc	---
+utterance.markb /predefined/
+utterance.is_cr ---
+utterance.CRcls ---
+ref.clsf	jaw 180807
+
+
+
+file: run1605_007b
+
+text.grids	aua 200707  (students, Anna and Angelika)
+move.markables  jaw 180807
+move.items      jaw 180807
+move.grnd	jaw 180807
+move.wrld	jaw 180807
+topic.markables ---
+topic.clsfc	---
+utterance.markb /predefined/
+utterance.is_cr ---
+utterance.CRcls ---
+ref.clsf	jaw 180807
+
+

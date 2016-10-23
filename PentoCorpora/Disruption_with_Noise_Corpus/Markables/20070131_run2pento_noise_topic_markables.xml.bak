@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/topic">
+<markable id="markable_741" span="word_36..word_41" topic="piece" />
+<markable id="markable_740" span="word_21..word_35" topic="location" />
+<markable id="markable_742" span="word_42..word_62" topic="orientation" />
+</markables>

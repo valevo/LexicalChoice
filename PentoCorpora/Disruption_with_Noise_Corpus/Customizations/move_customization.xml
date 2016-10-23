@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<customization>
+<rule pattern="{all}" style="bold=true"/>
+<!-- <rule pattern="{all}" style="background=blue"/> -->
+</customization>

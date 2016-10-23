@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_307" span="word_1..word_108" grounding_status="confident"  world="incorrect"  piece="1"  move_type="regular_move" />
+<markable id="markable_308" span="word_109..word_127" grounding_status="confident"  world="incorrect"  piece="2"  move_type="regular_move" />
+<markable id="markable_330" span="word_1366..word_1383" grounding_status="reconfirm"  world="not_moved"  piece="6"  move_type="repair_sequence" />
+<markable id="markable_331" span="word_1384..word_1394" grounding_status="reconfirm"  world="not_moved"  piece="10"  move_type="repair_sequence" />
+<markable id="markable_309" span="word_128..word_174" grounding_status="confident"  world="incorrect"  piece="3"  move_type="regular_move" />
+<markable id="markable_332" span="word_1491..word_1558" grounding_status="confident"  world="correct"  piece="1"  move_type="repair_sequence" />
+<markable id="markable_333" span="word_1559..word_1596" grounding_status="confident"  world="correct"  piece="5"  move_type="repair_sequence" />
+<markable id="markable_311" span="word_231..word_311" grounding_status="confident"  world="incorrect"  piece="5"  move_type="regular_move" />
+<markable id="markable_310" span="word_175..word_230" grounding_status="confident"  world="correct"  piece="4"  move_type="regular_move" />
+<markable id="markable_315" span="word_408..word_588" grounding_status="unconfident"  world="correct"  piece="7"  move_type="regular_move" />
+<markable id="markable_328" span="word_1395..word_1451" grounding_status="confident"  world="correct"  piece="3"  move_type="repair_sequence" />
+<markable id="markable_314" span="word_385..word_407" grounding_status="confident"  world="incorrect"  piece="6"  move_type="regular_move" />
+<markable id="markable_327" span="word_1214..word_1296" grounding_status="confident"  world="correct"  piece="12"  move_type="regular_move" />
+<markable id="markable_313" span="word_339..word_384" grounding_status="confident"  world="incorrect"  piece="5"  move_type="repair_sequence" />
+<markable id="markable_312" span="word_312..word_338" grounding_status="on_hold"  world="not_moved"  piece="6"  move_type="regular_move" />
+<markable id="markable_325" span="word_1169..word_1196" grounding_status="confident"  world="correct"  piece="11"  move_type="regular_move" />
+<markable id="markable_326" span="word_1197..word_1213" grounding_status="confident"  world="correct"  piece="7"  move_type="repair_sequence" />
+<markable id="markable_323" span="word_1016..word_1097" grounding_status="on_hold"  world="not_moved"  piece="10"  move_type="regular_move" />
+<markable id="markable_324" span="word_1120..word_1168" grounding_status="confident"  world="correct"  piece="10"  move_type="regular_move" />
+<markable id="markable_321" span="word_830..word_923" grounding_status="unconfident"  world="incorrect"  piece="7"  move_type="repair_sequence" />
+<markable id="markable_322" span="word_1098..word_1119" grounding_status="confident"  world="correct"  piece="6"  move_type="repair_sequence" />
+<markable id="markable_320" span="word_924..word_1015" grounding_status="unconfident"  world="correct"  piece="9"  move_type="regular_move" />
+<markable id="markable_319" span="word_640..word_829" grounding_status="on_hold"  world="not_moved"  piece="9"  move_type="regular_move" />
+<markable id="markable_318" span="word_631..word_639" grounding_status="confident"  world="correct"  piece="8"  move_type="regular_move" />
+<markable id="markable_317" span="word_589..word_624" grounding_status="on_hold"  world="not_moved"  piece="8"  move_type="regular_move" />
+<markable id="markable_316" span="word_625..word_630" grounding_status="confident"  world="correct"  piece="2"  move_type="repair_sequence" />
+</markables>

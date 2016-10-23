@@ -1,0 +1,60 @@
+Pento Move Classification Scheme
+====================
+
+D1: Piece identifier (values from 1 to 11)
+
+D2: Move Type
+	- [ c ] confidently grounded
+	- [ u ] unconfidently grounded
+	- [ i ] via inference (non-explicitly grounded)
+
+D3: World
+
+	- [ c ] correct
+    	- [ i ] incorrect	
+    	- [ n ] not_placed
+
+A question mark [ ? ] indicates that the info was not clear (used when no video is available)
+
+
+20061117_run2pento_noise
+1ci,2cc,3ui,4un,1cc,4cc,5ui,6cc,7un,5ui,3ui,1cc,,4cc,6cc,5un,3ui,5ui,7ci,7ic,8ui,9cc,5ic,10cc,8ic,11cc,3cc
+comments: no elephant
+
+20070117_run1pento_noise
+1cc,2ci,3cc,4cc,5un,2ui,4cc,2ui,5uc,2cc,6cc,7cc,8cc,9cc,10cc,11cc
+comments: no elephant
+
+20070131_run1pento_noise
+1cc,2cc,3ci,4cc,5cc,6ui,5un,6ci,5ci,7un,5ci,7cc,6cc,5cc,7cc,5ii,8un,5cc,8cc,9un,3cc,9cc,10cc,11cc
+comment: elephant (try to change to grid scheme but doesn't work), over optimistic executor
+
+20070131_run2pento_noise
+1cc,2uc,3cc,2uc,4cc,5cc,6cc,7cc,8cc,9cc,10cc,11cc
+comments: unsure about pieces changing colour, elephant
+
+20070131_run3pento_noise
+1cc,2cc,3cc,4cc,5cc,6cc,7cc,8ui,9cc,10cc,11ci
+comments: not properly finished, no elephant
+
+20061123_pent_nonoise
+1cc,2un,1cc,2cc,3cc,4un,0,4cc,5cc,6cc,7cc,8cc,9cc,10cc,11cc
+comment: no elephant
+
+20070124_run1pento_nonoise
+1cc,2c?,3uc,4cc,5cc,6ui,7ui,5uc,7cc,9cc,8un,9cc,7cc,3cc,5cc,10un,6uc,11un,8cc,11cc
+comment: no elephant
+
+20070201_run1pento_nonoise
+1cc,2ci,3un,2un,1cc,2cc,3cc,4cc,5cc,6cc,7cc,8cc,9cc,10cc,11cc
+comments: no elephant
+
+20070201_run3pento_nonoise
+1cc,2cc,3cc,4cc,5cc,6cc,7cc,8ci,9cc,10ui,8cc,10cc,11cc
+comments: elephant, very fast
+
+20070201_run4pento_nonoise
+1cc,2cc,3cc,4cc,5cc,6cc,7cc,9ic,8cc,10cc,11cc
+comments: elephant, great ref exp by analogy, very fast
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_373" span="word_415..word_526" grounding_status="confident"  world="correct"  piece="2"  move_type="regular_move" />
+<markable id="markable_372" span="word_58..word_414" grounding_status="confident"  world="correct"  piece="1"  move_type="regular_move" />
+<markable id="markable_384" span="word_2464..word_3017" grounding_status="confident"  world="correct"  piece="9"  move_type="repair_sequence" />
+<markable id="markable_383" span="word_2417..word_2463" grounding_status="on_hold"  world="not_moved"  piece="11"  move_type="regular_move" />
+<markable id="markable_382" span="word_2356..word_2416" grounding_status="confident"  world="correct"  piece="10"  move_type="regular_move" />
+<markable id="markable_381" span="word_1887..word_2355" grounding_status="confident"  world="incorrect"  piece="9"  move_type="regular_move" />
+<markable id="markable_379" span="word_1767..word_1886" grounding_status="confident"  world="correct"  piece="8"  move_type="regular_move" />
+<markable id="markable_378" span="word_1611..word_1766" grounding_status="confident"  world="correct"  piece="7"  move_type="regular_move" />
+<markable id="markable_386" span="word_3027..word_3038" grounding_status="confident"  world="correct"  piece="12"  move_type="regular_move" />
+<markable id="markable_385" span="word_3018..word_3026" grounding_status="confident"  world="correct"  piece="11"  move_type="regular_move" />
+<markable id="markable_375" span="word_705..word_793" grounding_status="confident"  world="correct"  piece="4"  move_type="regular_move" />
+<markable id="markable_374" span="word_527..word_704" grounding_status="confident"  world="correct"  piece="3"  move_type="regular_move" />
+<markable id="markable_377" span="word_1434..word_1610" grounding_status="confident"  world="correct"  piece="6"  move_type="regular_move" />
+<markable id="markable_376" span="word_794..word_1433" grounding_status="confident"  world="correct"  piece="5"  move_type="regular_move" />
+</markables>

@@ -1,0 +1,253 @@
+file: 20061117_run1pento_noise
+
+move.markables  jaw 010807
+		das 200807 revised, made it more consistent with other
+		    	   mv annotations (less fine-grained)
+move.items      jaw 010807
+move.grnd	jaw 010807
+move.wrld	jaw 010807
+topic.markables jaw 140807
+topic.clsfc	jaw 140807
+utterance.markb /predefined/
+utterance.first das 130307 [ overwritten ]
+		das 220407
+utterance.is_cr das 230407
+		raquel 150807 (new markables utterance2)
+utterance.CRcls das 230407
+		raq 150807 (new markables utterance2)
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+file: 20061117_run2pento_noise
+
+move.markables  raq 160307
+		das 210407
+move.items      raq 160307
+		das 210407
+move.grnd	das 210407
+move.wrld	das 210407
+topic.markables das 210407
+topic.clsfc	das 210407
+utterance.markb /predefined/
+utterance.first das 120207 
+		raq 160307
+		das 210407
+utterance.is_cr das 120207 unsystematic, for some
+		das 210407
+		raq 150807 (new markables utterance2)
+utterance.CRcls das 210407
+		raq 150807 (new markables utterance2)
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+file: 20061123_pento_nonoise
+
+move.markables  jaw 010807
+		das 200807 revised, made it more consistent with other
+		    	   mv annotations (less fine-grained)
+move.items      jaw 010807
+move.grnd	jaw 010807
+move.wrld	jaw 010807
+topic.markables jaw 140807
+topic.clsfc	jaw 140807
+utterance.markb /predefined/
+utterance.first das 130307 [ overwritten ]
+		das 220407
+utterance.is_cr das 020507
+		raq 150807 (new markables utterance2)
+utterance.CRcls das 020507
+		raq 150807 (new markables utterance2)
+		das 240807 added one missing link to antecedent
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+
+
+file: 20070117_run1pento_noise
+
+move.markables  raq 160307
+		das 190407 redone with new definitions
+move.items      raq 160307
+		das 190407 redone with new definitions
+move.grnd	das 190407
+move.wrld	das 190407
+topic.markables das 190407
+topic.clsfc	das 190407
+utterance.markb /predefined/
+utterance.first das 120207
+		raq 160307
+		das 190407
+utterance.is_cr das 120207 unsystematic, for some
+		das 190407
+		raq 150807 (new markables utterance2)
+utterance.CRcls das 190407
+		raq 150807 (new markables utterance2)
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls ---
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+
+file: 20070124_run1pento_nonoise
+
+move.markables  raq 120307
+move.items      raq 120307
+topic.markables ---
+topic.clsfc	---
+utterance.markb /predefined/
+utterance.first raq 120307
+		das 220407  moved first utterance, to include talk
+		    	    about set-up
+utterance.is_cr ---
+utterance.CRcls ---
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+
+file: 20070131_run1pento_noise
+
+move.markables  das 030507
+move.items      das 030507
+move.grnd	das 030507
+move.wrld	das 030507
+topic.markables das 030507
+topic.clsfc	das 030507
+utterance.markb /predefined/
+utterance.first das 220407
+utterance.is_cr das 230407
+		raq 150807 (new markables utterance2)
+utterance.CRcls das 230407
+		raq 150807 (new markables utterance2)
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+
+file: 20070131_run2pento_noise
+
+move.markables  das 200407
+move.items      das 200407
+move.grnd	das 200407
+move.wrld	das 200407
+topic.markables das 200407
+topic.clsfc	das 200407
+utterance.markb /predefined/
+utterance.first das 130307 [ overwritten ] 
+		das 200407
+utterance.is_cr das 200407
+		raq 150807 (new markables utterance2)
+utterance.CRcls das 200407
+		raq 150807 (new markables utterance2)
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+file: 20070131_run3pento_noise
+
+move.markables  das 190407
+move.items      das 190407
+move.grnd	das 190407
+move.wrld	das 190407
+topic.markables das 190407
+topic.clsfc	das 190407
+utterance.markb /predefined/
+utterance.first das 130307 [ overwritten ]
+		das 190407
+utterance.is_cr das 190407
+utterance.CRcls das 190407
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+
+
+
+
+
+file: 20070201_run1pento_nonoise
+
+move.markables  das 200407
+move.items      das 200407
+move.grnd	das 200407
+move.wrld	das 200407
+topic.markables das 200407
+topic.clsfc	das 200407
+utterance.markb /predefined/
+utterance.first das 130307 [ overwritten ] 
+		das 200407
+utterance.is_cr das 200407
+		raq 150807 (new markables utterance2)
+utterance.CRcls das 200407
+		raq 150807 (new markables utterance2)
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+
+file: 20070201_run3pento_nonoise
+
+move.markables  das 200407
+move.items      das 200407
+move.grnd	das 200407
+move.wrld	das 200407
+topic.markables das 200407
+topic.clsfc	das 200407
+utterance.markb /predefined/
+utterance.first das 130307 [ overwritten ] 
+		das 200407
+utterance.is_cr das 200407
+		raq 150807 (new markables utterance2)
+utterance.CRcls das 200407
+		raq 150807 (new markables utterance2)
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls --- 
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+
+
+
+
+
+file: 20070201_run4pento_nonoise
+
+move.markables  raq 120307
+		das 200407 new conventions
+move.items      raq 120307
+		das 200407 new conventions
+move.grnd	das 200407
+move.wrld	das 200407
+topic.markables das 200407
+topic.clsfc	das 200407
+utterance.markb /predefined/
+utterance.first raq 120307
+		das 200407
+utterance.is_cr das 200407
+		raq 150807 (new markables utterance2)
+utterance.CRcls das 200407
+		raq 150807 (new markables utterance2)
+utterance.DAMSL jaw 010908 [ removed again; must be fixed first ]
+utterance.NScls ---
+syntax.pos_chnk das 190707 (programmatically)
+ref.clsf	jaw 010807
+

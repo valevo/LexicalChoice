@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/topic">
+<markable id="markable_555" span="word_1308..word_1315" topic="ground_stat" />
+<markable id="markable_540" span="word_630..word_657" topic="problem_det" />
+<markable id="markable_551" span="word_1065..word_1082" topic="task_setup" />
+<markable id="markable_534" span="word_4..word_39" topic="piece" />
+<markable id="markable_545" span="word_902..word_940" topic="location" />
+<markable id="markable_552" span="word_1083..word_1092" topic="problem_det" />
+<markable id="markable_548" span="word_1028..word_1040" topic="problem_det" />
+<markable id="markable_536" span="word_116..word_251" topic="location" />
+<markable id="markable_535" span="word_40..word_115" topic="orientation" />
+<markable id="markable_542" span="word_658..word_857" topic="piece" />
+<markable id="markable_547" span="word_958..word_1027" topic="state_descr" />
+<markable id="markable_553" span="word_1093..word_1192" topic="state_descr" />
+<markable id="markable_546" span="word_941..word_957" topic="problem_det" />
+<markable id="markable_539" span="word_596..word_629" topic="piece" />
+<markable id="markable_550" span="word_1047..word_1064" topic="location" />
+<markable id="markable_554" span="word_1193..word_1307" topic="location" />
+<markable id="markable_549" span="word_1041..word_1046" topic="task_setup" />
+<markable id="markable_543" span="word_858..word_901" topic="orientation" />
+</markables>

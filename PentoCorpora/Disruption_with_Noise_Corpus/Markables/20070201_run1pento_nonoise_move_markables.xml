@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_533" span="word_4..word_251" piece="1l"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_593" span="word_2593..word_2616" piece="11i"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_562" span="word_1492..word_1559" piece="4t"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_571" span="word_1786..word_2114" piece="6w"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_585" span="word_2543..word_2563" piece="9c"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_537" span="word_252..word_595" piece="2n"  move_world="wrong"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_567" span="word_1560..word_1785" piece="5y"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_541" span="word_658..word_1315" piece="2n"  move_world="success"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_581" span="word_2407..word_2542" piece="8f"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_556" span="word_1316..word_1491" piece="3v"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_589" span="word_2564..word_2592" piece="10p"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_576" span="word_2115..word_2406" piece="7x"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_538" span="word_596..word_657" piece="3v"  move_world="not_moved"  move_type="regular_move"  move_ground="on_hold" />
+</markables>

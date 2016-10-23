@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<annotationscheme>
+
+<attribute id="move_id" type="nominal_list" name="Piece">
+<value id="?" name="?"/>
+<value id="1" name="1"/>
+<value id="2" name="2"/>
+<value id="3" name="3"/>
+<value id="4" name="4"/>
+<value id="5" name="5"/>
+<value id="6" name="6"/>
+<value id="7" name="7"/>
+<value id="8" name="8"/>
+<value id="9" name="9"/>
+<value id="10" name="10"/>
+<value id="11" name="11"/>
+<value id="12" name="12"/>
+</attribute>
+
+
+<attribute id="move_type" type="nominal_list" name="move_type">
+<value id="move_na" name="NA"/>
+<value id="regular_move" name="regular_move"/>
+<value id="repair_sequence" name="repair_sequence"/>
+</attribute>
+
+<attribute id="move_ground" type="nominal_list" name="grounding_status">
+<value id="ground_na" name="na"/>
+<value id="ground_conf" name="confident"/>
+<value id="gound_unconf" name="unconfident"/>
+<value id="ground_hold" name="on_hold"/>
+<value id="ground_rec" name="reconfirm"/>
+</attribute>
+
+<attribute id="move_world" type="nominal_list" name="world">
+<value id="world_na" name="N/A"/>
+<value id="world_c" name="correct"/>
+<value id="world_i" name="incorrect"/>
+<value id="world_n" name="not_moved"/>
+<value id="world_v" name="no_video"/>
+</attribute>
+
+
+</annotationscheme>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<annotationscheme>
+
+
+<attribute id="item_id" type="freetext" name="item_id">
+<value id="item_id_entry" name="id"/>
+</attribute>
+
+
+<attribute id="ref_type" type="nominal_button" name="referent_type">
+<value id="ref_piece" name="piece" next="form,presentation,base,perspective"/>
+<value id="ref_part" name="part_of_piece" next="form,presentation,base,perspective"/>
+<value id="ref_loc" name="location" next="form,presentation,base,perspective"/>
+<value id="ref_comp_piece" name="comp_piece" next="form,presentation,base,perspective"/>
+<value id="ref_comp_loc" name="comp_loc" next="form,presentation,base,perspective"/>
+<value id="ref_desc_piece" name="desc_piece" next="form,presentation,base,perspective"/>
+</attribute>
+
+
+<attribute id="form" type="nominal_list" name="form">
+<value id="form_na" name="non_available"/>
+<value id="form_pro" name="pronoun"/>
+<value id="form_def" name="def_NP"/>
+<value id="form_indef" name="indef_NP"/>
+<value id="form_quant" name="quant_NP"/>
+<value id="form_comp_sent" name="PP"/>
+<value id="form_PP" name="comp_sent"/>
+<value id="form_attr_sent" name="attribution_sent"/>
+<value id="form_other_sent" name="other_sent"/>
+<value id="form_other" name="other"/>
+</attribute>
+
+
+<attribute id="presentation" type="nominal_list" name="presentation">
+<value id="pres_na" name="non_available"/>
+<value id="pres_elementary" name="elementary"/>
+<value id="pres_self_rep" name="self_repaired"/>
+<value id="pres_episodic" name="episodic"/>
+<value id="pres_installment" name="installment"/>
+<value id="pres_provisional" name="provisional"/>
+<value id="pres_dummy" name="dummy"/>
+<value id="pres_proxy" name="proxy"/>
+<value id="pres_expansion" name="expansion"/>
+<value id="pres_replacement" name="replacement"/>
+<value id="pres_other" name="other"/>
+</attribute>
+
+
+
+<attribute id="base" type="nominal_list" name="base">
+<value id="base_na" name="non_available"/>
+<value id="base_none" name="none"/>
+<value id="base_repetition" name="repetition"/>
+<value id="base_simplification" name="simplification"/>
+<value id="based_prev" name="related_to_prev"/>
+</attribute>
+
+
+<attribute id="perspective" type="nominal_list" name="perspective">
+<value id="pers_na" name="non_available"/>
+<value id="pers_none" name="none"/>
+<value id="pers_lit" name="literal"/>
+<value id="pers_analog_letter" name="analogical_letter"/>
+<value id="pers_analog_elephant" name="analogical_elephant"/>
+<value id="pers_analog_other" name="analogical_other"/>
+</attribute>
+
+
+<attribute id="pos_scheme" type="nominal_list" name="position_scheme">
+<value id="pos_scheme_na" name="non_available"/>
+<value id="pos_sheme_board" name="relative_to_board"/>
+<value id="pos_sheme_pieces" name="relative_to_pieces"/>
+<value id="pos_sheme_parts" name="relative_to_parts"/>
+</attribute>
+
+</annotationscheme>

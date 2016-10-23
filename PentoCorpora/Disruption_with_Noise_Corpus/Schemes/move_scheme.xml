@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<annotationscheme>
+
+<attribute id="piece" type="nominal_button" name="Piece">
+<value id="ID_na" name="NA"/>
+<value id="ID1" name="1L" text="1L"/>
+<value id="ID2" name="2N" text="2N"/>
+<value id="ID3" name="3V" text="3V"/>
+<value id="ID4" name="4T" text="4T"/>
+<value id="ID5" name="5Y" text="5Y"/>
+<value id="ID6" name="6W" text="6W"/>
+<value id="ID7" name="7X" text="7N"/>
+<value id="ID8" name="8F" text="8F"/>
+<value id="ID9" name="9C" text="9C"/>
+<value id="ID10" name="10P" text="10P"/>
+<value id="ID11" name="11I" text="11I"/>
+</attribute>
+
+<attribute id="move_type" type="nominal_button" name="move_type">
+<value id="move_na" name="NA"/>
+<value id="regular_move" name="regular_move" text="Regular_Move"/>
+<value id="repair_sequence" name="repair_sequence" text="Repair_Sequence"/>
+</attribute>
+
+
+<attribute id="move_ground" type="nominal_button" name="move_ground">
+<value id="mv_g_na" name="na"/>
+<value id="mv_g_i" name="inconf"/>
+<value id="mv_g_c" name="confid"/>
+<value id="mv_g_c" name="on_hold"/>
+<value id="mv_g_r" name="reconf"/>
+</attribute>
+
+
+<attribute id="move_world" type="nominal_button" name="move_world">
+<value id="mv_w_na" name="na"/>
+<value id="mv_w_s" name="success"/>
+<value id="mv_w_w" name="wrong"/>
+<value id="mv_w_n" name="not_moved"/>
+<value id="mv_w_v" name="no_video"/>
+</attribute>
+
+
+</annotationscheme>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<annotationscheme>
+
+
+<!-- values for the following features will be there automatically,
+     extracted from the praat text grids -->
+
+<attribute id="utterance_number" type="freetext" name="number">
+<value id="utterance_number_value" name="number"/>
+</attribute>
+
+<attribute id="utterance_speaker" type="nominal_button" name="speaker">
+<value id="utterance_player" name="p-utts"/>
+<value id="utterance_executer" name="e-utts"/>
+</attribute>
+
+<attribute id="utterance_start" type="freetext" name="start">
+<value id="start_value" name="start_value"/>
+</attribute>
+
+<attribute id="utterance_end" type="freetext" name="end">
+<value id="end_value" name="end_value"/>
+</attribute>
+
+
+<!-- first last: manually annotated -->
+<attribute id="utterance_bound" type="nominal_button" name="first_or_last">
+<value id="utterance_bound_n" name="no"/>
+<value id="utterance_bound_y" name="yes"/>
+</attribute>
+
+
+<!-- noise found: autmatically annotated -->
+<attribute id="utterance_noisefound" type="nominal_button" name="noise_found">
+<value id="utterance_withnoise" name="yes" next="utterance_n_indict,utterance_noised,utterance_noise_ext,utterance_n_loc,utterance_n_info,utterance_n_followup"/>
+<value id="utterance_withoutnoise" name="no"/>
+</attribute>
+
+
+
+
+<!-- The "real", manually annotated features begin here -->
+
+
+<attribute id="utterance_cr" type="nominal_button" name="is_cr">
+<value id="utterance_cr_no" name="no"/>
+<value id="utterance_cr_yes" name="yes" next="utterance_cr_ante,utterance_cr_mood,utterance_cr_form,utterance_cr_relant,utterance_cr_extent,utterance_cr_sever,utterance_cr_answ"/>
+</attribute>
+
+
+<!-- noise annotation -->
+
+<attribute id="utterance_n_followup" type="nominal_list" name="reaction_to_noise">
+<value id="utterance_nf_na" name="na"/>
+<value id="utterance_nf_cr" name="cr"/>
+<value id="utterance_nf_ig" name="ignored"/>
+</attribute>
+
+
+<attribute id="utterance_n_indict" type="nominal_button" name="in_dictated_mat">
+<value id="utterance_nind_na" name="not_filled_in"/>
+<value id="utterance_nind_y" name="yes"/>
+<value id="utterance_nind_n" name="no"/>
+</attribute>
+
+
+<attribute id="utterance_noised" type="nominal_list" name="what_was_noisy">
+<value id="utterance_nsd_na" name="not_filled_in"/>
+<value id="utterance_nsd_prtw" name="part of word"/>
+<value id="utterance_nsd_wwd" name="1 hole word"/>
+<value id="utterance_nsd_phr" name="whole phrase"/>
+<value id="utterance_nsd_all" name="whole utterance"/>
+</attribute>
+
+
+<attribute id="utterance_noise_ext" type="nominal_list"
+	   name="how_much_was_noisy">
+<value id="utterance_next_na" name="not_filled_in"/>
+<value id="utterance_next_14" name="less_than_ten"/>
+<value id="utterance_next_14" name="a_quarter"/>
+<value id="utterance_next_13" name="a_third"/>
+<value id="utterance_next_12" name="half"/>
+<value id="utterance_next_23" name="two_thirds"/>
+<value id="utterance_next_34" name="three_quarters"/>
+<value id="utterance_next_all" name="everything"/>
+</attribute>
+
+
+<attribute id="utterance_n_loc" type="nominal_button" name="where_was_noise">
+<value id="utterance_nloc_na" name="not_filled_in"/>
+<value id="utterance_nloc_first" name="first_third"/>
+<value id="utterance_nloc_secnd" name="second_third"/>
+<value id="utterance_nloc_third" name="last_third"/>
+</attribute>
+
+
+
+<attribute id="utterance_n_info" type="nominal_button" name="was_informative">
+<value id="utterance_ni_na" name="n_a"/>
+<value id="utterance_ni_no" name="no"/>
+<value id="utterance_ni_yes" name="yes"/>
+</attribute>
+
+
+
+
+
+<!-- CR annotation -->
+
+
+<attribute id="utterance_cr_ante" name="link_to_antecedent"
+	   type="markable_pointer" color="blue" width="1"
+	   style="lcurve" max_size="1" point_to_markable_text="Mark as CR antecedent"
+	   remove_pointer_to_markable_text="Unmark as CR antecedent">
+  <value id="utterance_antelink_notset" name="not_set" />
+  <value id="utterance_antelink_set" name="set"/>
+ </attribute>
+
+
+
+<attribute id="utterance_cr_mood" type="nominal_list" name="cr_mood">
+<value id="utterance_cr_mood_none" name="none"/>
+<value id="utterance_cr_mood_decl" name="decl"/>
+<value id="utterance_cr_mood_declf" name="decl-f"/>
+<value id="utterance_cr_mood_polq" name="polar-q"/>
+<value id="utterance_cr_mood_wh_q" name="wh-q"/>
+<value id="utterance_cr_mood_alt_q" name="alt-q"/>
+<value id="utterance_cr_mood_gap" name="gap"/>
+<value id="utterance_cr_mood_imp" name="imp"/>
+<value id="utterance_cr_mood_other" name="other"/>
+</attribute>
+
+
+<attribute id="utterance_cr_form" type="nominal_list" name="cr_form">
+<value id="utterance_cr_form_none" name="none"/>
+<value id="utterance_cr_form_partc" name="particle"/>
+<value id="utterance_cr_form_parti" name="partial"/>
+<value id="utterance_cr_form_compl" name="complete"/>
+</attribute>
+
+<attribute id="utterance_cr_relant" type="nominal_list" name="cr_rel_ant">
+<value id="utterance_cr_relant_none" name="none"/>
+<value id="utterance_cr_relant_repet" name="repetition"/>
+<value id="utterance_cr_relant_refor" name="reformulation"/>
+<value id="utterance_cr_relant_add" name="addition"/>
+<value id="utterance_cr_relant_addwh" name="add-wh"/>
+<value id="utterance_cr_relant_indep" name="independent"/>
+</attribute>
+
+<attribute id="utterance_cr_extent" type="nominal_list" name="cr_extent">
+<value id="utterance_cr_extent_none" name="none"/>
+<value id="utterance_cr_extent_yes" name="yes"/>
+<value id="utterance_cr_extent_no" name="no"/>
+</attribute>
+
+
+<attribute id="utterance_cr_sever" type="nominal_list" name="cr_severity">
+<value id="utterance_cr_sever_none" name="none"/>
+<value id="utterance_cr_sever_conf" name="hypothesis presented"/>
+<value id="utterance_cr_sever_rep" name="no hypothesis"/>
+</attribute>
+
+
+<attribute id="utterance_cr_answ" type="nominal_list" name="answer_to_cr">
+<value id="utterance_cr_answ_none" name="none"/>
+<value id="utterance_cr_answ_repet" name="repetition"/>
+<value id="utterance_cr_answ_elab" name="elaboration"/>
+<value id="utterance_cr_answ_reform" name="reformulation"/>
+<value id="utterance_cr_answ_yn" name="yes-no"/>
+<value id="utterance_cr_answ_defin" name="definition given"/>
+<value id="utterance_cr_answ_no_react" name="no reaction"/>
+</attribute>
+
+
+
+<attribute id="utterance_isself" type="nominal_button" name="isself">
+<value id="utterance_issf_no" name="no"/>
+<value id="utterance_issf_yes" name="yes"/>
+<value id="utterance_issf_maybe" name="maybe"/>
+</attribute>
+
+
+
+</annotationscheme>

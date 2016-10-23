@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<annotationscheme>
+
+<attribute id="comment" name="comment" text="Add your comment here!" type="freetext">
+<value id="value_1" name="comment"/>
+</attribute>	
+
+<attribute id="task_execution" type="nominal_button" name="task">
+<value id="na" name="na"/>
+<value id="present_description" name="present_description" text="Beschreibung von Teil oder Position" next="description_type"/>
+<value id="request_information" name="request_information" text="Anforderung von Teil- oder Positionsbeschreibung" next="description_type"/>
+<value id="request_action" name="request_action" text="Aufforderung, der Anweisung des Sprechers zu folgen"/>
+<value id="suggest" name="suggest" text="Sprecher äußert Hypothese zum Spielplan"/>
+</attribute>
+
+<attribute id="description_type" type="nominal_button" name="description_type">
+<value id="describe_piece" name="describe_piece" text="Beschreibung des Teils"/>
+<value id="describe_position" name="describe_position" text="Beschreibung der Position"/>
+</attribute>
+
+<attribute id="task_management" type="nominal_button" name="management">
+<value id="na" name="na"/>
+<value id="discuss_setting" name="discuss_setting" text="Diskussion der Aufgabenstellung"/>
+<value id="discuss_strategy" name="discuss_strategy" text="Diskussion der Strategie"/>
+
+<!-- Früher start_move/end_move -->
+<value id="coordinate_task" name="coordinate_task" text="Strukturierung der Aufgabe"/>
+<value id="provisional_move" name="provisional_move" text="Move wird provisorisch ausgeführt"/>
+
+<!-- Neuer Dialogakt -->
+<value id="stalling" name="stalling" text="Teilnehmer bittet um Geduld"/>
+</attribute>
+
+<attribute id="feedback" type="nominal_button" name="feedback">
+<value id="na" name="na" text="Nicht zutreffend"/>
+<value id="feedback_pos" name="feedback_pos" text="Positives Feedback"/>
+<value id="ask_confirmation" name="ask_confirmation" text="Der Sprecher fordert vom Adressaten eine direkte Bestätigung an"/>
+<value id="clarification" name="clarification" text="Adressat fordert Bestätigung oder Klärung an" next="relation_antecedent,expectation,source"/>
+<value id="feedback_neg" name="feedback_neg" text="Negatives Feedback"/>
+</attribute>
+
+<attribute id="relation_antecedent" type="nominal_button" name="relation_antecedent">
+<value id="independent" name="independent" text="Alternative Formulierung der Klärungsfrage"/>
+<value id="repetition" name="repetition" text="Wörtliche Wiederholung"/>
+<value id="addition" name="addition" text="Ergänzung von wiederholtem Material"/>
+<value id="reformulation" name="reformulation" text="Paraphrasierung des wiederholten Materials"/>
+<value id="independent" name="independent" text="Alternative Formulierung der Klärungsfrage"/>
+</attribute>
+
+<attribute id="expectation" type="nominal_button" name="expectation">
+<value id="repetition_reformulation" name="repetition_reformulation" text="Die Beschreibung soll wiederholt bzw. paraphrasiert werden"/>
+<value id="confirmation" name="confirmation" text="Die Beschreibung soll bestätigt werden"/>
+</attribute>
+
+<attribute id="source" type="nominal_button" name="source">
+<value id="channel" name="channel" text="Probleme auf Ebene des Kommunikationskanals"/>
+<value id="description" name="description" text="Probleme beim semantischen oder lexikalischen Verständnis"/>
+<value id="other" name="other" text="other"/>
+</attribute>
+
+<attribute id="functional_ambiguity" type="nominal_button" name="functional_ambiguity">
+<value id="na" name="na"/>
+<value id="ambiguous" name="ambiguous"/>
+</attribute>
+
+<attribute id="other" type="nominal_button" name="other">
+<value id="na" name="na"/>
+<value id="self_talk" name="self_talk"/>
+<value id="incomplete" name="incomplete"/>
+</attribute>
+
+
+</annotationscheme>

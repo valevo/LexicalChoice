@@ -1,0 +1,229 @@
+Change Log for Annotation of New Transcripts of PTT Data
+--------------------------------------------------
+
+- file: FTT_2006-02-13pair1
+
+Ref Exp
+    item_id: done  22-04-07
+    referent_type: done  22-04-07
+    presentation: 22-04-07
+    form: 22-04-07
+    base: 22-04-07
+    perspective: 22-04-07
+    position_scheme: 22-04-07
+
+Moves: 
+    item_id: raq 21-04-07; janine 18-06-07
+    move_type: raq 21-04-07 partially; janine 18-06-07
+    grounding_status: raq 21-04-07 partially; janine 18-06-07
+    wold_status: raq 21-04-07; janine 18-06-07 no video available
+
+DAs: 
+     janine 28-06-07 
+     some comments in NotesDAanno.txt    
+
+
+- file: FTT_2006-03-27Pair1
+
+Utterance
+    markables: das 220807, removed spurious utterance markable.
+
+Ref Exp
+    item_id: done 22-04-07
+    referent_type: done 22-04-07
+    presentation: done 22-04-07
+    form: done 22-04-07
+    base: done 22-04-07
+    perspective: done 22-04-07
+    position_scheme: done 22-04-07
+
+Moves: 
+    item_id: janine 14-06-07
+    move_type:  janine 14-06-07
+    grounding_status:  janine 14-06-07
+    world_status:  janine 14-06-07
+
+DAs: 
+     janine 29-06-07     
+
+
+
+
+- file: FTT_2006-03-28pair2
+
+Ref Exp
+    item_id: done 22-04-07
+    referent_type: done 22-04-07
+    presentation: --
+    form: --
+    base: --
+    perspective: --
+    position_scheme: --
+
+Moves: 
+    item_id_regular_move: raq 21-04-07 partially; janine 18-06-07
+    move_type: raq 21-04-07 partially; janine 18-06-07
+    grounding_status: raq 21-04-07 reg. moves only; janine 18-06-07
+    world_status: raq 21-04-07 reg. moves only; janine 18-06-07
+
+DAs: 
+     janine 29-06-07     
+
+
+- file: FTT_2006-06-22pair1
+
+Ref Exp
+    item_id: done 24-04-07
+    referent_type: done 24-04-07
+    presentation: --
+    form: --
+    base: --
+    perspective: --
+    position_scheme: --
+
+Moves: 
+    item_id: janine 21-06-07
+    move_type: janine 21-06-07
+    grounding_status: janine 21-06-07
+    world_status: janine 21-06-07
+
+DAs: 
+     janine 01-07-07     
+
+
+
+- file: FTT_2006-06-22pair2
+
+Ref Exp
+    item_id: done 24-04-07
+    referent_type: done 24-04-07
+    presentation: --
+    form: --
+    base: --
+    perspective: --
+    position_scheme: --
+
+Moves: 
+    item_id: janine 21-06-07
+    move_type: janine 21-06-07
+    grounding_status: janine 21-06-07
+    world_status: janine 21-06-07
+
+DAs: 
+     janine 03-07-07     
+
+
+---------------------------------
+
+- file: PTT_2006-02-13pair2a
+
+Ref Exp
+    item_id: done 22-04-07
+    referent_type: done 22-04-07
+    presentation: done 22-04-07
+    form: done 22-04-07
+    base: done 22-04-07
+    perspective: done 22-04-07
+    position_scheme: done 22-04-07
+
+Moves: 
+    item_id: janine 22-06-07
+    move_type: janine 22-06-07
+    grounding_status: janine 22-06-07
+    world_status: janine 22-06-07
+
+DAs: 
+     janine 02-07-07     
+
+
+
+- file: PTT_2006-03-27Pair2a
+
+Ref Exp
+    item_id: done 22-04-07
+    referent_type: done 22-04-07
+    presentation: --
+    form: --
+    base: --
+    perspective: --
+    position_scheme: --
+
+Moves: 
+    item_id: janine 23-06-07
+    move_type: janine 23-06-07
+    grounding_status: janine 23-06-07
+    world_status: janine 23-06-07
+
+DAs: 
+     janine 04-07-07     
+
+
+- file: PTT_2006-03-27pair3a
+
+Ref Exp
+    item_id: done 22-04-07
+    referent_type: done 22-04-07
+    presentation: --
+    form: --
+    base: --
+    perspective: --
+    position_scheme: --
+
+Moves: 
+    item_id: janine 24-06-07
+    move_type:  janine 24-06-07
+    grounding_status:  janine 24-06-07
+    world_status:  janine 24-06-07
+
+    comment from Janine: in the audio file, some parts are not clearly 
+    or sometimes not audible at all due to the walkie-talkies. 
+    e.g. before utt 39 one utterance is missing (by p),    before utt 80: an utterance by p is missing.    But in the video file the turns by pare very clear. 
+
+DAs: 
+     janine 05-07-07     
+
+
+- file: PTT_2006-03-28pair1
+
+Ref Exp
+    item_id: done 24-04-07
+    referent_type: done 24-04-07
+    presentation: --
+    form: --
+    base: --
+    perspective: --
+    position_scheme: --
+
+Moves: 
+    item_id: janine 25-06-07
+    move_type: janine 25-06-07
+    grounding_status: janine 25-06-07
+    world_status: janine 25-06-07
+
+DAs: 
+     janine 01-07-07     
+
+
+
+- file: PTT_2006-06-22pair3a
+
+Ref Exp
+    item_id: done 25-04-07
+    referent_type: done 25-04-07
+    presentation: --
+    form: --
+    base: --
+    perspective: --
+    position_scheme: --
+
+Moves: 
+    item_id: janine 23-06-07
+    move_type: janine 23-06-07
+    grounding_status: janine 23-06-07
+    world_status: janine 23-06-07
+
+    comment from Janine: "unverstaendlich" bits in transcription
+    are perfectly clear in video
+
+DAs: 
+     janine 05-07-07     

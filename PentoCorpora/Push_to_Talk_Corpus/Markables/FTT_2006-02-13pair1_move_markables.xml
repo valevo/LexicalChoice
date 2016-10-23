@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_690" span="word_2947..word_3080" piece="7"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_678" span="word_1011..word_1104" piece="2"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_685" span="word_2222..word_2412" piece="6"  grounding_status="on_hold"  move_type="repair_sequence"  world="no_video" />
+<markable id="markable_679" span="word_1105..word_1230" piece="3"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_683" span="word_1807..word_2177" piece="3"  grounding_status="unconfident"  move_type="repair_sequence"  world="no_video" />
+<markable id="markable_693" span="word_3393..word_3458" piece="10"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_697" span="word_3496..word_3519" piece="12"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_686" span="word_2413..word_2667" piece="5"  grounding_status="on_hold"  move_type="repair_sequence"  world="no_video" />
+<markable id="markable_694" span="word_3459..word_3495" piece="11"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_682" span="word_1661..word_1806" piece="6"  grounding_status="on_hold"  move_type="regular_move"  world="no_video" />
+<markable id="markable_692" span="word_3138..word_3392" piece="9"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_681" span="word_1300..word_1660" piece="5"  grounding_status="unconfident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_687" span="word_2668..word_2877" piece="3"  grounding_status="confident"  move_type="repair_sequence"  world="no_video" />
+<markable id="markable_688" span="word_2878..word_2915" piece="5"  grounding_status="confident"  move_type="repair_sequence"  world="no_video" />
+<markable id="markable_677" span="word_20..word_1010" piece="1"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_691" span="word_3081..word_3137" piece="8"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_689" span="word_2916..word_2946" piece="6"  grounding_status="confident"  move_type="repair_sequence"  world="no_video" />
+<markable id="markable_680" span="word_1231..word_1299" piece="4"  grounding_status="confident"  move_type="regular_move"  world="no_video" />
+<markable id="markable_684" span="word_2178..word_2221" piece="1"  grounding_status="reconfirm"  move_type="repair_sequence"  world="no_video" />
+</markables>

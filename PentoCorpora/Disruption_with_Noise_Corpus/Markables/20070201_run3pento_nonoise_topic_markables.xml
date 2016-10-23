@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/topic">
+<markable id="markable_266" span="word_390..word_397" topic="location" />
+<markable id="markable_265" span="word_375..word_389" topic="piece" />
+<markable id="markable_276" span="word_566..word_588" topic="orientation" />
+<markable id="markable_303" span="word_1408..word_1423" topic="ground_stat" />
+<markable id="markable_270" span="word_462..word_476" topic="piece" />
+<markable id="markable_310" span="word_1056..word_1092" topic="location" />
+<markable id="markable_281" span="word_762..word_853" topic="location" />
+<markable id="markable_275" span="word_530..word_565" topic="piece" />
+<markable id="markable_306" span="word_1424..word_1427" topic="ground_stat" />
+<markable id="markable_258" span="word_155..word_224" topic="location" />
+<markable id="markable_292" span="word_1094..word_1109" topic="piece" />
+<markable id="markable_260" span="word_225..word_267" topic="location" />
+<markable id="markable_288" span="word_933..word_982" topic="location" />
+<markable id="markable_300" span="word_1222..word_1274" topic="piece" />
+<markable id="markable_272" span="word_489..word_524" topic="location" />
+<markable id="markable_293" span="word_1110..word_1124" topic="orientation" />
+<markable id="markable_262" span="word_324..word_367" topic="location" />
+<markable id="markable_301" span="word_1275..word_1400" topic="location" />
+<markable id="markable_287" span="word_923..word_932" topic="piece" />
+<markable id="markable_273" span="word_525..word_529" topic="ground_stat" />
+<markable id="markable_294" span="word_1125..word_1153" topic="location" />
+<markable id="markable_256" span="word_43..word_124" topic="piece" />
+<markable id="markable_278" span="word_684..word_715" topic="problem_det" />
+<markable id="markable_280" span="word_751..word_761" topic="orientation" />
+<markable id="markable_263" span="word_368..word_374" topic="ground_stat" />
+<markable id="markable_277" span="word_589..word_683" topic="location" />
+<markable id="markable_255" span="word_18..word_42" topic="task_setup" />
+<markable id="markable_284" span="word_880..word_915" topic="location" />
+<markable id="markable_285" span="word_916..word_922" topic="ground_stat" />
+<markable id="markable_289" span="word_983..word_997" topic="ground_stat" />
+<markable id="markable_299" span="word_1196..word_1221" topic="problem_det" />
+<markable id="markable_309" span="word_1027..word_1055" topic="piece" />
+<markable id="markable_271" span="word_477..word_488" topic="orientation" />
+<markable id="markable_296" span="word_1154..word_1190" topic="piece" />
+<markable id="markable_279" span="word_716..word_750" topic="piece" />
+<markable id="markable_257" span="word_125..word_154" topic="orientation" />
+<markable id="markable_261" span="word_268..word_323" topic="piece" />
+<markable id="markable_268" span="word_424..word_461" topic="location" />
+<markable id="markable_311" span="word_1093" topic="ground_stat" />
+<markable id="markable_297" span="word_1191..word_1195" topic="problem_det" />
+<markable id="markable_308" span="word_998..word_1026" topic="location" />
+<markable id="markable_302" span="word_1401..word_1407" topic="ground_stat" />
+<markable id="markable_267" span="word_398..word_423" topic="orientation" />
+<markable id="markable_283" span="word_854..word_879" topic="piece" />
+</markables>

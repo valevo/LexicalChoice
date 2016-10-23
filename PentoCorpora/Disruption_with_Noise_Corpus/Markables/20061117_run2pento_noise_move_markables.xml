@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_595" span="word_2532..word_2804" piece="4t"  move_world="wrong"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_582" span="word_2192..word_2247" piece="11i"  move_world="not_moved"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_622" span="word_3300..word_3316" piece="8f"  move_world="success"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_562" span="word_1659..word_1863" piece="4t"  move_world="na"  move_type="repair_sequence"  move_ground="on_hold" />
+<markable id="markable_571" span="word_1947..word_1965" piece="1l"  move_world="not_moved"  move_type="repair_sequence"  move_ground="reconf" />
+<markable id="markable_610" span="word_3075..word_3187" piece="10p"  move_world="na"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_578" span="word_2061..word_2191" piece="4t"  move_world="na"  move_type="repair_sequence"  move_ground="on_hold" />
+<markable id="markable_626" span="word_3333..word_3521" piece="3v"  move_world="success"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_547" span="word_1355..word_1489" piece="5y"  move_world="wrong"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_546" span="word_1293..word_1322,word_1324..word_1354" piece="4t"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_604" span="word_2871..word_3044" piece="8f"  move_world="wrong"  move_type="regular_move"  move_ground="inconf" />
+<markable id="markable_609" span="word_3045..word_3074" piece="9c"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_620" span="word_3289..word_3299" piece="11i"  move_world="na"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_515" span="word_154..word_306" piece="2n"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_601" span="word_2805..word_2870" piece="7x"  move_world="success"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_616" span="word_3202..word_3288" piece="10p"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_554" span="word_1490..word_1578" piece="6w"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_522" span="word_307..word_1018" piece="3v"  move_world="wrong"  move_type="regular_move"  move_ground="inconf" />
+<markable id="markable_543" span="word_1203..word_1292" piece="1l"  move_world="success"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_509" span="word_85..word_153" piece="1l"  move_world="wrong"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_559" span="word_1579..word_1658" piece="7x"  move_world="na"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_567" span="word_1864..word_1946" piece="3v"  move_world="na"  move_type="repair_sequence"  move_ground="on_hold" />
+<markable id="markable_589" span="word_2355..word_2531" piece="4t"  move_world="wrong"  move_type="repair_sequence"  move_ground="inconf" />
+<markable id="markable_624" span="word_3317..word_3332" piece="11i"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_586" span="word_2248..word_2354" piece="7x"  move_world="wrong"  move_type="repair_sequence"  move_ground="inconf" />
+<markable id="markable_572" span="word_1966..word_2039" piece="4t"  move_world="not_moved"  move_type="repair_sequence"  move_ground="reconf" />
+<markable id="markable_523" span="word_1019..word_1202" piece="4t"  move_world="na"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_614" span="word_3188..word_3201" piece="4t"  move_world="success"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_577" span="word_2040..word_2060" piece="6w"  move_world="not_moved"  move_type="repair_sequence"  move_ground="reconf" />
+</markables>

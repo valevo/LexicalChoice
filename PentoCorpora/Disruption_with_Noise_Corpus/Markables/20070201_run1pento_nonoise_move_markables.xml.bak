@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_533" span="word_4..word_251" piece="1l"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_537" span="word_252..word_595" piece="2n"  move_world="wrong"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_541" span="word_658..word_1315" piece="2n"  move_world="success"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_538" span="word_596..word_657" piece="3v"  move_world="not_moved"  move_type="regular_move"  move_ground="on_hold" />
+</markables>

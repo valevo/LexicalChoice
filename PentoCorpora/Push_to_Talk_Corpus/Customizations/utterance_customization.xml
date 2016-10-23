@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization>
+<rule pattern="speaker={p-utts}" style="foreground=red"/>
+<rule pattern="speaker={e-utts}" style="foreground=blue"/>
+<rule pattern="feedback={clarification}" style="background=green"/>
+</customization>

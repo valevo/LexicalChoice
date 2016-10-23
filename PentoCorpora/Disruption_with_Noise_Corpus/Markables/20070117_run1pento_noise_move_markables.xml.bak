@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_772" span="word_2561..word_2662" piece="5y"  move_world="not_moved"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_743" span="word_1926..word_2080" piece="5y"  move_world="na"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_709" span="word_873..word_1884" piece="5y"  move_world="na"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_752" span="word_2663..word_2875" piece="2n"  move_world="success"  move_type="repair_sequence"  move_ground="confid" />
+<markable id="markable_753" span="word_2178..word_2560" piece="5y"  move_world="success"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_742" span="word_2081..word_2177" piece="2n"  move_world="wrong"  move_type="repair_sequence"  move_ground="inconf" />
+<markable id="markable_675" span="word_186..word_742" piece="2n"  move_world="wrong"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_700" span="word_824..word_872" piece="4t"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_739" span="word_1885..word_1925" piece="2n"  move_world="wrong"  move_type="repair_sequence"  move_ground="reconf" />
+<markable id="markable_699" span="word_743..word_823" piece="3v"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_669" span="word_13..word_185" piece="1l"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+</markables>

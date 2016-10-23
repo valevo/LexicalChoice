@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_229" span="word_1582..word_1715" grounding_status="confident"  world="correct"  piece="10"  move_type="regular_move" />
+<markable id="markable_228" span="word_1400..word_1581" grounding_status="confident"  world="correct"  piece="9"  move_type="regular_move" />
+<markable id="markable_219" span="word_29..word_280" grounding_status="confident"  world="correct"  piece="1"  move_type="regular_move" />
+<markable id="markable_230" span="word_1716..word_1752" grounding_status="confident"  world="correct"  piece="11"  move_type="regular_move" />
+<markable id="markable_231" span="word_1753..word_1776" grounding_status="confident"  world="correct"  piece="12"  move_type="regular_move" />
+<markable id="markable_222" span="word_498..word_606" grounding_status="confident"  world="correct"  piece="4"  move_type="regular_move" />
+<markable id="markable_220" span="word_281..word_378" grounding_status="confident"  world="correct"  piece="2"  move_type="regular_move" />
+<markable id="markable_221" span="word_379..word_497" grounding_status="confident"  world="correct"  piece="3"  move_type="regular_move" />
+<markable id="markable_226" span="word_1236..word_1355" grounding_status="confident"  world="correct"  piece="7"  move_type="regular_move" />
+<markable id="markable_227" span="word_1356..word_1399" grounding_status="confident"  world="correct"  piece="8"  move_type="regular_move" />
+<markable id="markable_224" span="word_607..word_1124" grounding_status="confident"  world="correct"  piece="5"  move_type="regular_move" />
+<markable id="markable_225" span="word_1125..word_1235" grounding_status="confident"  world="correct"  piece="6"  move_type="regular_move" />
+</markables>

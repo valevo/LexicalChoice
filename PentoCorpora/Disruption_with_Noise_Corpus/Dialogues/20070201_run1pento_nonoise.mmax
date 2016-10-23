@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mmax_project>
+<words>20070201_run1pento_nonoise_words.xml</words>
+<annotations>
+	<level name="utterances" schemefile="utterance_scheme.xml" customization_file="utterance_customization.xml">20070201_run1pento_nonoise_utterance_markables.xml</level>
+ 	<level name="turns" schemefile="turn_scheme.xml" customization_file="customization.xml">20070201_run1pento_nonoise_turn_markables.xml</level>
+ 	<level name="moves" schemefile="move_scheme.xml" customization_file="move_customization.xml">20070201_run1pento_nonoise_move_markables.xml</level>
+ 	<level name="topic" schemefile="topic_scheme.xml" customization_file="topic_customization.xml">20070201_run1pento_nonoise_topic_markables.xml</level>
+ 	<level name="ref" schemefile="ref_exp_scheme.xml" customization_file="customization.xml">20070201_run1pento_nonoise_ref_markables.xml</level>
+ </annotations>
+</mmax_project>

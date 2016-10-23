@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customization>
+<rule pattern="speaker={p-utts};noise_found={yes}" style="background=orange"/>
+<rule pattern="speaker={p-utts}" style="foreground=red"/>
+<rule pattern="speaker={e-utts}" style="foreground=blue"/>
+<rule pattern="is_cr={yes}" style="background=green"/>
+</customization>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<annotationscheme>
+
+<attribute id="topic_class" type="nominal_list" name="topic">
+<value id="topic_class_ot" name="other"/>
+<value id="topic_class_p" name="piece"/>
+<value id="topic_class_o" name="orientation"/>
+<value id="topic_class_l" name="location"/>
+<value id="topic_class_t" name="task_setup"/>
+<value id="topic_class_g" name="ground_stat"/>
+<value id="topic_class_m" name="meta_ling"/>
+<value id="topic_class_r" name="problem_det"/>
+<value id="topic_class_b" name="state_descr"/>
+<value id="topic_class_a" name="action_descr"/>
+<value id="topic_class_f" name="off_topic"/>
+</attribute>
+
+</annotationscheme>

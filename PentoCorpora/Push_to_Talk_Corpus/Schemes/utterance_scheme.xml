@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<annotationscheme>
+
+
+<!-- values for the following features will be there automatically,
+     extracted from the praat text grids -->
+
+<attribute id="utterance_number" type="freetext" name="number">
+<value id="utterance_number_value" name="number"/>
+</attribute>
+
+<attribute id="utterance_speaker" type="nominal_button" name="speaker">
+<value id="utterance_player" name="p-utts"/>
+<value id="utterance_executer" name="e-utts"/>
+</attribute>
+
+<attribute id="utterance_start" type="freetext" name="start">
+<value id="start_value" name="start_value"/>
+</attribute>
+
+<attribute id="utterance_end" type="freetext" name="end">
+<value id="end_value" name="end_value"/>
+</attribute>
+
+
+<!-- The "real", manually annotated features begin here -->
+
+
+<attribute id="utterance_bound" type="nominal_button" name="first_or_last">
+<value id="utterance_bound_n" name="no"/>
+<value id="utterance_bound_y" name="yes"/>
+</attribute>
+
+<!-- features of DA taxonomy from 2006 PTT annotation begin here -->
+
+<attribute id="task_execution" type="nominal_button" name="task_execution">
+<value id="na" name="na"/>
+<value id="present_description" name="present_description" text="Sprecher beschreibt Teil oder Position" next="description_type"/>
+<value id="request_information" name="request_information" text="Sprecher fordert neue Informationen zu einem Teil oder einer Position an" />
+<value id="request_action" name="request_action" text="Sprecher fordert den Adressaten auf, seiner Anweisung zu folgen"/>
+<value id="suggest_error" name="suggest_error" text="Sprecher äußert die Annahme, dass ein Teil oder eine Position falsch sind"/>
+</attribute>
+
+<attribute id="description_type" type="nominal_button" name="description_type">
+<value id="describe_piece" name="describe_piece" text="Sprecher beschreibt Attribute des Teils"/>
+<value id="describe_position" name="describe_position" text="Sprecher beschreibt Attribute der Position"/>
+</attribute>
+
+<attribute id="task_management" type="nominal_button" name="task_management">
+<value id="na" name="na"/>
+<value id="discuss_setting" name="discuss_setting" text="Sprecher äußert sich zu den externen Bedingungen"/>
+<value id="discuss_strategy" name="discuss_strategy" text="Sprecher äußert sich zu Aufgabe und Strategie"/>
+<value id="coordinate_task" name="coordinate_task" text="Sprecher schließt den aktuellen Teilschritt ab oder beginnt einen neuen Teilschritt"/>
+<value id="stalling" name="stalling" text="Sprecher weist Adressaten darauf hin, dass sich die Ausführung der Aufgabe verzögert"/>
+</attribute>
+
+<attribute id="feedback" type="nominal_button" name="feedback">
+<value id="na" name="na" text="Nicht zutreffend"/>
+<value id="feedback_pos" name="feedback_pos" text="Sprecher signalisiert, dass er die vorangegangene Äußerung verstanden hat"/>
+<value id="ask_confirmation" name="ask_confirmation" text="Check-Question: Sprecher fordert vom Adressaten eine explizite Bestätigung"/>
+<value id="clarification" name="clarification" text="Initiator kann kein eindeutiges Feedback geben, sondern hält eine weitere Klärung für notwendig" next="relation_antecedent,expectation,source"/>
+<value id="feedback_neg" name="feedback_neg" text="Sprecher signalisiert, dass er die vorangegangene Äußerung nicht verstanden hat"/>
+</attribute>
+
+<attribute id="relation_antecedent" type="nominal_button" name="relation_antecedent">
+<value id="repetition" name="repetition" text="Initiator wiederholt den Inhalt der vorangegangenen Äußerung wortwörtlich"/>
+<value id="addition" name="addition" text="Initiator ergänzt die vorangegangene Äußerung mit eigenen Material - Desambiguierung"/>
+<value id="reformulation/partner_version" name="reformulation/partner_version" text="Initiator bietet eine eigene Version zur vorangegangenen Äußerung bzw. dem dadurch implizierten Spielstand an"/>
+<value id="independent" name="independent" text="Initiator stellt eine Frage, die auf den Inhalt der vorangegangenen Äußerung Bezug nimmt (Klärungsfrage)"/>
+</attribute>
+
+<attribute id="expectation" type="nominal_button" name="expectation">
+<value id="repetition_reformulation" name="repetition_reformulation" text="Inititator erwartet, dass der Adressat seine Äußerung wiederholt bzw. neu formuliert"/>
+<value id="confirmation" name="confirmation" text="Initiator bittet um eine Bestätigung der Äußerung bzw. des Inhalts, der sich aus der Äußerung ergibt"/>
+</attribute>
+
+<attribute id="source" type="nominal_button" name="source">
+<value id="channel_problem" name="channel" text="Initiator weist auf eine Blockierung des Kommunikationskanals hin (PTT)"/>
+<value id="piece" name="piece" text="Initiator ist sich nicht sicher, ob er das richtige Teil identifiziert hat und bittet daher um Klärung"/>
+<value id="position" name="position" text="Initiator ist sich nicht sicher, ob er die richtige Position identifiziert hat und bittet daher um Klärung"/>
+<value id="other" name="other" text="Initiator signalisiert, dass er nicht weiß, was der Sprecher meint oder will"/>
+</attribute>
+
+<attribute id="other" type="nominal_button" name="other">
+<value id="na" name="na"/>
+<value id="incomplete" name="incomplete" text="Äußerung des Sprecher ist unvollständig, weil er unterbrochen wurde oder nicht weiterweiß"/>
+<value id="comment" name="comment" text="Sprecher kommentiert die Aufgabe oder Situation. Die Äußerung trägt nicht direkt zur Ausführung der Aufgabe bei"/>
+</attribute>
+
+
+</annotationscheme>

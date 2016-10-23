@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_1055" span="word_272..word_556" piece="2n"  move_type="regular_move" />
+<markable id="markable_1063" span="word_3054..word_3612,word_3926..word_3941" piece="8f"  move_type="regular_move" />
+<markable id="markable_1066" span="word_3769..word_3786" piece="7x"  move_type="repair_sequence" />
+<markable id="markable_1064" span="word_3613..word_3740" piece="na"  move_type="repair_sequence" />
+<markable id="markable_1059" span="word_2256..word_2512" piece="6w"  move_type="regular_move" />
+<markable id="markable_1056" span="word_561..word_1208" piece="3v"  move_type="regular_move" />
+<markable id="markable_1060" span="word_2575..word_2666,word_2805..word_3017" piece="7x"  move_type="regular_move" />
+<markable id="markable_1071" span="word_4390..word_4487" piece="11i"  move_type="regular_move" />
+<markable id="markable_1067" span="word_3787..word_3796" piece="3v"  move_type="repair_sequence" />
+<markable id="markable_1058" span="word_1475..word_2233" piece="5y"  move_type="regular_move" />
+<markable id="markable_1069" span="word_3976..word_4191" piece="10p"  move_type="regular_move" />
+<markable id="markable_1065" span="word_3741..word_3768" piece="9c"  move_type="repair_sequence" />
+<markable id="markable_1072" span="word_4619..word_4756" piece="8f"  move_type="repair_sequence" />
+<markable id="markable_1061" span="word_2667..word_2804" piece="5y"  move_type="repair_sequence" />
+<markable id="markable_1054" span="word_64..word_227" piece="1l"  move_type="na" />
+<markable id="markable_1068" span="word_3797..word_3925" piece="5y"  move_type="repair_sequence" />
+<markable id="markable_1057" span="word_1248..word_1470" piece="4t"  move_type="regular_move" />
+<markable id="markable_1070" span="word_4192..word_4265,word_4324..word_4330,word_4349..word_4380" piece="na"  move_type="repair_sequence" />
+<markable id="markable_1062" span="word_3018..word_3053" piece="9c"  move_type="regular_move" />
+</markables>

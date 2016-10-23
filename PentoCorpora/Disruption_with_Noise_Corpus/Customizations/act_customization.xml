@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<customization>
+<rule pattern="{all}" style="bold=true"/>
+<rule pattern="task={present_description,request_information,request_action, suggest}" style="foreground=magenta"/>
+<rule pattern="feedback={feedback_pos,feedback_neg,ask_confirmation,clarification}" style="foreground=green"/>
+<rule pattern="management={discuss_setting,discuss_strategy,coordinate_task}" style="foreground=gray"/>
+</customization>

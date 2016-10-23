@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/moves">
+<markable id="markable_786" span="word_1460..word_2266" piece="5y"  move_world="success"  move_type="regular_move"  move_ground="inconf" />
+<markable id="markable_768" span="word_1000..word_1106" piece="2n"  move_world="not_moved"  move_type="repair_sequence"  move_ground="inconf" />
+<markable id="markable_823" span="word_2587..word_2615" piece="6w"  move_world="not_moved"  move_type="repair_sequence"  move_ground="reconf" />
+<markable id="markable_767" span="word_849..word_999" piece="3v"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_822" span="word_2536..word_2586" piece="7x"  move_world="success"  move_type="regular_move"  move_ground="on_hold" />
+<markable id="markable_813" span="word_2267..word_2535" piece="6w"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_824" span="word_2616..word_2652" piece="7x"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_750" span="word_217..word_848" piece="2n"  move_world="success"  move_type="regular_move"  move_ground="inconf" />
+<markable id="markable_851" span="word_3130..word_3160" piece="11i"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_743" span="word_19..word_216" piece="1l"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_839" span="word_2918..word_3021" piece="9c"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_831" span="word_2653..word_2917" piece="8f"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_846" span="word_3022..word_3129" piece="10p"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+<markable id="markable_778" span="word_1107..word_1459" piece="4t"  move_world="success"  move_type="regular_move"  move_ground="confid" />
+</markables>

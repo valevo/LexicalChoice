@@ -1,0 +1,47 @@
+Comments from Janine about the transfer of 
+============================
+DA annotation to new transcripts
+============================
+
+- file: FTT_2006-02-13pair1
+
+utt.5 is splitted in two parts in old annotation: present description of piece and coordinate task!
+I chose "coordinate task".
+ 
+utt 8/9 are splitted in the new annotation in two utterances. Gave them both the same annotation("feedback_pos", as in old annotation)
+ 
+utt 13-17: some "hm" and "also..." have been rearranged in new annotation (referred to in brackets):
+ 
+old: 
+      1:  <utt> [x1][y1]
+      2:  [x2][y2]
+ 
+
+new:  1: <utt>
+      2: [x2]
+      2: [y2]
+      1: [x1]
+      1: [y1]
+ 
+I gave each of them the annotation they had in the old structure except
+from [x2], which is "Ja?" and in my opinion is an "ask_confirmation".
+ 
+
+utt. 25/26: splitted in new annotation. I gave them both the same annotation.  
+ 
+utt. 28: old version:
+                       1: "Like a Z, okay" --> feedback_pos
+         new version: 
+                       1: "Like a Z" --> I chose "present description"
+                       1: "okay"     --> I chose "feedback_pos"
+ 
+
+utt. 55/56: new version:  1: "uhm..."
+                                   1: "Put it like this..."
+ 
+                old version:  1: "uhm...put it like this..."
+ 
+I gave them the same annotation: describe_position (as in old annotation)
+ 
+
+utt. 520 was splitted up in the old version. I chose "coordinate_task", because it is the beginning of a new move. Unfortunately, several information is included in the utterance (where to put the piece, how it looks). 

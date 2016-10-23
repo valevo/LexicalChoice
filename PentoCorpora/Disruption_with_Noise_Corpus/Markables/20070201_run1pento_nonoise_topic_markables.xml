@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE markables SYSTEM "markables.dtd">
+<markables xmlns="www.eml.org/NameSpaces/topic">
+<markable id="markable_595" span="word_2607..word_2611" topic="ground_stat" />
+<markable id="markable_600" span="word_587..word_595" topic="ground_stat" />
+<markable id="markable_551" span="word_1065..word_1082" topic="task_setup" />
+<markable id="markable_534" span="word_4..word_39" topic="piece" />
+<markable id="markable_569" span="word_1601..word_1664" topic="orientation" />
+<markable id="markable_592" span="word_2589..word_2592" topic="ground_stat" />
+<markable id="markable_579" span="word_2400..word_2406" topic="ground_stat" />
+<markable id="markable_578" span="word_2119..word_2398" topic="location" />
+<markable id="markable_563" span="word_1492..word_1503" topic="piece" />
+<markable id="markable_575" span="word_2104..word_2114" topic="ground_stat" />
+<markable id="markable_597" span="word_252..word_376" topic="piece" />
+<markable id="markable_547" span="word_958..word_1027" topic="state_descr" />
+<markable id="markable_568" span="word_1560..word_1600" topic="piece" />
+<markable id="markable_546" span="word_941..word_957" topic="problem_det" />
+<markable id="markable_558" span="word_1322..word_1337" topic="location" />
+<markable id="markable_553" span="word_1093..word_1192" topic="state_descr" />
+<markable id="markable_590" span="word_2564..word_2581" topic="piece" />
+<markable id="markable_566" span="word_1554..word_1559" topic="ground_stat" />
+<markable id="markable_588" span="word_2552..word_2563" topic="location" />
+<markable id="markable_545" span="word_902..word_940" topic="location" />
+<markable id="markable_559" span="word_1338..word_1445" topic="orientation" />
+<markable id="markable_548" span="word_1028..word_1040" topic="problem_det" />
+<markable id="markable_536" span="word_116..word_251" topic="location" />
+<markable id="markable_557" span="word_1316..word_1321" topic="piece" />
+<markable id="markable_539" span="word_596..word_629" topic="piece" />
+<markable id="markable_564" span="word_1504..word_1534" topic="location" />
+<markable id="markable_550" span="word_1047..word_1064" topic="location" />
+<markable id="markable_591" span="word_2582..word_2588" topic="location" />
+<markable id="markable_583" span="word_2434..word_2491" topic="orientation" />
+<markable id="markable_594" span="word_2593..word_2606" topic="piece" />
+<markable id="markable_549" span="word_1041..word_1046" topic="task_setup" />
+<markable id="markable_584" span="word_2493..word_2535" topic="location" />
+<markable id="markable_582" span="word_2407..word_2433" topic="piece" />
+<markable id="markable_540" span="word_630..word_657" topic="problem_det" />
+<markable id="markable_573" span="word_2019..word_2056" topic="orientation" />
+<markable id="markable_560" span="word_1446..word_1488" topic="location" />
+<markable id="markable_570" span="word_1665..word_1785" topic="location" />
+<markable id="markable_565" span="word_1535..word_1553" topic="orientation" />
+<markable id="markable_587" span="word_2543..word_2551" topic="piece" />
+<markable id="markable_598" span="word_377..word_434" topic="orientation" />
+<markable id="markable_554" span="word_1193..word_1307" topic="location" />
+<markable id="markable_543" span="word_858..word_901" topic="orientation" />
+<markable id="markable_555" span="word_1308..word_1315" topic="ground_stat" />
+<markable id="markable_574" span="word_2057..word_2103" topic="location" />
+<markable id="markable_552" span="word_1083..word_1092" topic="problem_det" />
+<markable id="markable_596" span="word_2612..word_2616" topic="ground_stat" />
+<markable id="markable_535" span="word_40..word_115" topic="orientation" />
+<markable id="markable_542" span="word_658..word_857" topic="piece" />
+<markable id="markable_561" span="word_1489..word_1491" topic="ground_stat" />
+<markable id="markable_586" span="word_2536..word_2542" topic="ground_stat" />
+<markable id="markable_572" span="word_1786..word_2018" topic="piece" />
+<markable id="markable_577" span="word_2115..word_2118" topic="piece" />
+<markable id="markable_599" span="word_435..word_586" topic="location" />
+</markables>

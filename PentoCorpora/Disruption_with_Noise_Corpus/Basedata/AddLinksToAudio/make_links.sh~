@@ -1,0 +1,6 @@
+#!/bin/tcsh -f
+
+set $basedir = "/Volumes/TRANSFERHD/PotsdamDialogueCorpora/Corpora/Disruption_with_Noise_Corpus/Data/Pentomino_Task"
+set $outdir = "~/tmp/lntest"
+
+ln -s $basedir/Noise/

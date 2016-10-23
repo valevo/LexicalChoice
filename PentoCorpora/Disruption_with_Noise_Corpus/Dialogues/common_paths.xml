@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE common_paths>
+<common_paths>
+  <basedata_path>..\Basedata\</basedata_path>
+  <scheme_path>..\Schemes\</scheme_path>
+  <style_path>..\Styles\</style_path>
+  <customization_path>..\Customizations\</customization_path>
+  <markable_path>..\Markables\</markable_path>
+  <views>
+    <stylesheet>noise_moves.xsl</stylesheet>
+    <stylesheet>noise_utts.xsl</stylesheet>
+    <stylesheet>noise_start.xsl</stylesheet>
+    <stylesheet>noise_better.xsl</stylesheet>
+  </views>
+</common_paths>

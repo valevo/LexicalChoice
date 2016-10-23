@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationscheme>
+
+<attribute id="turn_number" type="freetext" name="number">
+<value id="turn_number_value" name="number"/>
+</attribute>
+
+<attribute id="turn_speaker" type="nominal_button" name="speaker">
+<value id="turn_player" name="p-turns"/>
+<value id="turn_executer" name="e-turns"/>
+</attribute>
+
+
+<attribute id="turn_start" type="freetext" name="start">
+<value id="start_value" name="start_value"/>
+</attribute>
+
+<attribute id="turn_end" type="freetext" name="end">
+<value id="end_value" name="end_value"/>
+</attribute>
+
+</annotationscheme>
