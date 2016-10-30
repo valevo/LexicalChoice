@@ -185,6 +185,7 @@ from nltk import word_tokenize
 from nltk.stem.snowball import SnowballStemmer
 stemmer = SnowballStemmer('german')
 ignore_words = stopwords.words('german')
+ignore_words.append('dis')
 from string import punctuation
 punct = list(punctuation)
 
