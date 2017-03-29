@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from os import path, listdir, makedirs, stat
 import re
+import compound_splitter
 import pickle
 
 def extract_info(dialogue):
@@ -127,7 +128,6 @@ def extract_info(dialogue):
     moves_ref_words = sorted(moves_ref_words.items())
     return moves_ref_words, success_move
 
-
 def load_data(dialogue_path):
     '''
     Load pickle file of the dialogue
@@ -183,21 +183,28 @@ def get_previous(refexp, obj_refexps):
 from nltk.corpus import stopwords
 from nltk import word_tokenize
 from nltk.stem.snowball import SnowballStemmer
-stemmer = SnowballStemmer('german')
-ignore_words = stopwords.words('german')
-ignore_words.append('dis')
+
 from string import punctuation
 punct = list(punctuation)
 
-def lex_material(exp):
+def lex_material(exp, language, splits):
     '''
     Extract content words by the phrase
     :param exp: referring expression tuple
     :return: set of content words of the phrase
     '''
     exp = exp[2]
-    words = word_tokenize(exp)
+    words = word_tokenize(exp, language)
+    if language == 'german':
+	words_nocomp = []
+	for w in words:
+		word = compound_splitter.split_word(w, splits)
+		words_nocomp = words_nocomp + (word.split(' '))	
+	words = words_nocomp
     content_words = set()
+    stemmer = SnowballStemmer(language)
+    ignore_words = stopwords.words(language)
+    ignore_words.append('dis')
     for w in words:
         w = stemmer.stem(w)
         if not w in punct:
@@ -209,15 +216,19 @@ def lex_material(exp):
                 content_words.add(w)
     return content_words
 
-def lex_sim(exp1, exp2):
+def init_compounds(de_dict):
+    splits = compound_splitter.load_dict(de_dict)
+    return splits
+
+def lex_sim(exp1, exp2, language, splits):
     '''
     compute dice similarity between the content words in two referring expression
     :param exp1: referring expression tuple 1
     :param exp2: referring expression tuple 2
     :return: dice similarity between the content words in the expressions; undefined if they have none
     '''
-    words1 = lex_material(exp1)
-    words2 = lex_material(exp2)
+    words1 = lex_material(exp1, language, splits)
+    words2 = lex_material(exp2, language, splits)
     try:
         dice_sim = float(2*len(words1.intersection(words2)))/float(len(words1)+ len(words2))
     except:
