@@ -187,7 +187,7 @@ from nltk.stem.snowball import SnowballStemmer
 from string import punctuation
 punct = list(punctuation)
 
-def lex_material(exp, language, splits):
+def lex_material(exp, language, splits, compound):
     '''
     Extract content words by the phrase
     :param exp: referring expression tuple
@@ -195,12 +195,13 @@ def lex_material(exp, language, splits):
     '''
     exp = exp[2]
     words = word_tokenize(exp, language)
-    if language == 'german':
-	words_nocomp = []
-	for w in words:
-		word = compound_splitter.split_word(w, splits)
-		words_nocomp = words_nocomp + (word.split(' '))	
-	words = words_nocomp
+    if compound == True:
+	    if language == 'german':
+		words_nocomp = []
+		for w in words:
+			word = compound_splitter.split_word(w, splits)
+			words_nocomp = words_nocomp + (word.split(' '))	
+		words = words_nocomp
     content_words = set()
     stemmer = SnowballStemmer(language)
     ignore_words = stopwords.words(language)
@@ -220,15 +221,15 @@ def init_compounds(de_dict):
     splits = compound_splitter.load_dict(de_dict)
     return splits
 
-def lex_sim(exp1, exp2, language, splits):
+def lex_sim(exp1, exp2, language, splits, compound = True):
     '''
     compute dice similarity between the content words in two referring expression
     :param exp1: referring expression tuple 1
     :param exp2: referring expression tuple 2
     :return: dice similarity between the content words in the expressions; undefined if they have none
     '''
-    words1 = lex_material(exp1, language, splits)
-    words2 = lex_material(exp2, language, splits)
+    words1 = lex_material(exp1, language, splits, compound)
+    words2 = lex_material(exp2, language, splits, compound)
     try:
         dice_sim = float(2*len(words1.intersection(words2)))/float(len(words1)+ len(words2))
     except:
