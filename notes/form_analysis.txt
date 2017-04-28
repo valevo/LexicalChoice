@@ -1,0 +1,83 @@
+FORM ANALYSIS	
+
+	Move variation: 
+	Mean: 0.387088157083	Standard deviation: 0.440267566162
+	Max value: 1.74786809747	Min value: 0.0
+		High variability. 
+
+	Move alignment: 
+	Mean: 0.47493094667	Standard deviation: 0.444367779931
+	Max value: 1.0	Min value: 0.0
+		High variability. 
+
+	Move alignment e-utts: 
+	Mean: 0.483987119438	Standard deviation: 0.457333113892
+	Max value: 1.0	Min value: 0.0
+	Move alignment p-utts: 
+	Mean: 0.442945326279	Standard deviation: 0.454625676282
+	Max value: 1.0	Min value: 0.0
+		Not significant difference. Variability
+
+	Move variation e-utts: 
+	Mean: 0.239267986954	Standard deviation: 0.360349149453
+	Max value: 1.38629436112	Min value: 0.0
+	Move variation p-utts: 
+	Mean: 0.338062054508	Standard deviation: 0.405095411076
+	Max value: 1.56071040904	Min value: 0.0
+		Significant difference. Variability. 
+		Players tend to vary more. Executors are more consistent.
+		Across languages.
+
+Differences between languages: 1
+
+Move variation p-utts
+MannwhitneyuResult(statistic=52743.5, pvalue=0.027279800466427879)	Significantly different
+0.316322853636 0.385622489602
+
+Differences between players
+
+Move variation
+Players move variation de
+MannwhitneyuResult(statistic=51916.5, pvalue=0.0011226071436376208)	Significantly different
+Players move variation en
+MannwhitneyuResult(statistic=13939.0, pvalue=0.0055237976417072416)	Significantly different
+Players move variation all
+MannwhitneyuResult(statistic=121013.0, pvalue=7.6370886839849186e-05)	Significantly different
+
+GAME LEVEL
+
+	game alignment: 
+	Mean: 0.442140800693	Standard deviation: 0.392801879538
+	Max value: 1.0	Min value: 0.0
+	game variation: 
+	Mean: 0.627852328762	Standard deviation: 0.455632128501
+	Max value: 1.66746193343	Min value: 0.0
+
+	game alignment e-utts: 
+	Mean: 0.441888090463	Standard deviation: 0.413397574821
+	Max value: 1.0	Min value: 0.0
+	game alignment p-utts: 
+	Mean: 0.431931919109	Standard deviation: 0.41150390351
+	Max value: 1.0	Min value: 0.0
+		
+	game variation p-utts: 
+	Mean: 0.574254120273	Standard deviation: 0.430473475039
+	Max value: 1.56071040904	Min value: 0.0
+	game variation e-utts: 
+	Mean: 0.400591424544	Standard deviation: 0.417714150668
+	Max value: 1.38314875125	Min value: 0.0
+		Significant difference. 
+		Executors vary less. Across languages.		
+
+Differences between languages
+	
+
+Differences between players
+Players game variation de
+MannwhitneyuResult(statistic=13513.5, pvalue=0.0030154522970888835)	Significantly different
+Players game variation en
+MannwhitneyuResult(statistic=6051.0, pvalue=0.00020276783231570105)	Significantly different
+Players game variation all
+MannwhitneyuResult(statistic=37767.5, pvalue=3.6305149417567313e-06)	Significantly different
+
+The significant differences across roles are the same at the game and move level.

@@ -1,0 +1,102 @@
+LENGTH ANALYSIS
+
+
+MOVE LEVEL
+
+The compound splitter does not make any significant difference (mannwilkeneyu tests across values for German with or without: not significant)
+
+	Move coherence: 
+	Mean: 0.0737940616054	Standard deviation: 0.244869867019
+	Max value: 0.857142857143	Min value: -0.714285714286
+	Move alignment: 
+	Mean: 0.35439493915	Standard deviation: 0.233997998504
+	Max value: 0.931034482759	Min value: -0.0480769230769
+
+	Move alignment e-utts: 
+	Mean: 0.203967706951	Standard deviation: 0.318333879009
+	Max value: 0.931034482759	Min value: -0.875
+	Move alignment p-utts: 
+	Mean: 0.374090048544	Standard deviation: 0.258363103157
+	Max value: 0.9	Min value: -0.857142857143
+		Significant difference
+		?? Interpretation
+
+	Move coherence p-utts: 
+	Mean: 0.0885363335919	Standard deviation: 0.244501495207
+	Max value: 0.857142857143	Min value: -0.714285714286
+	Move coherence e-utts: 
+	Mean: 0.0469812450488	Standard deviation: 0.250659084075
+	Max value: 0.857142857143	Min value: -0.714285714286
+		Significant difference
+		?? Interpretation
+
+Differences between languages
+Move alignment p-utts
+MannwhitneyuResult(statistic=51338.5, pvalue=0.011198397397889715)	Significantly different
+Move alignment
+MannwhitneyuResult(statistic=68627.0, pvalue=0.0090975259306002552)	Significantly different
+
+
+Differences between players
+
+Players move alignment de
+MannwhitneyuResult(statistic=40552.5, pvalue=4.2286062338596298e-12)	Significantly different
+Players move alignment en
+MannwhitneyuResult(statistic=10925.5, pvalue=5.1605800923492297e-08)	Significantly different
+Players move alignment all
+MannwhitneyuResult(statistic=93959.0, pvalue=2.035477074947322e-18)	Significantly different
+Players move coherence de
+MannwhitneyuResult(statistic=30069.5, pvalue=0.0036365362681097671)	Significantly different
+Players move coherence en
+MannwhitneyuResult(statistic=8541.0, pvalue=0.045368819815801716)	Significantly different
+Players move coherence all
+MannwhitneyuResult(statistic=70754.0, pvalue=0.00067541713575821651)	Significantly different
+
+GAME LEVEL
+The compound splitter does not make any significant difference (mannwilkeneyu tests across values for German with or without: not significant)
+
+	game alignment: 
+	Mean: 0.336528619525	Standard deviation: 0.218621078676
+	Max value: 0.931034482759	Min value: 0.0
+	game coherence: 
+	Mean: 0.0397310894137	Standard deviation: 0.20212867886
+	Max value: 0.75	Min value: -0.714285714286
+
+	game coherence e-utts: 
+	Mean: -0.0107668846066	Standard deviation: 0.210948430958
+	Max value: 0.714285714286	Min value: -0.818181818182
+	game coherence p-utts: 
+	Mean: 0.050389192171	Standard deviation: 0.206262379908
+	Max value: 0.768154761905	Min value: -0.714285714286
+		Significant difference
+
+	game alignment p-utts: 
+	Mean: 0.365081159224	Standard deviation: 0.228405580564
+	Max value: 0.9	Min value: 0.0
+	game alignment e-utts: 
+	Mean: 0.174580587152	Standard deviation: 0.288125577442
+	Max value: 0.931034482759	Min value: -0.789473684211
+		Significant difference
+
+Differences between languages
+game players coherence
+MannwhitneyuResult(statistic=34925.5, pvalue=0.022994886998479597)	Significantly different
+game coherence
+MannwhitneyuResult(statistic=13887.0, pvalue=0.039572169691238744)	Significantly different
+
+
+Differences between players
+Players game alignment de
+MannwhitneyuResult(statistic=9091.0, pvalue=1.1438787777817816e-12)	Significantly different
+Players game alignment en
+MannwhitneyuResult(statistic=5388.5, pvalue=2.55955606466454e-06)	Significantly different
+Players game alignment all
+MannwhitneyuResult(statistic=29163.5, pvalue=1.3772358920802447e-16)	Significantly different
+Players game coherence de
+MannwhitneyuResult(statistic=10234.0, pvalue=0.00088426822597205846)	Significantly different
+Players game coherence en
+MannwhitneyuResult(statistic=5305.5, pvalue=0.0075953455999743453)	Significantly different
+Players game coherence all
+MannwhitneyuResult(statistic=30351.5, pvalue=3.5528566104596274e-05)	Significantly different
+
+The significant differences across roles are the same at the game and move level.

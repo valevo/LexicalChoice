@@ -1,0 +1,98 @@
+LEXICAL ANALYSIS
+
+MOVE LEVEL
+
+The compound splitter does not make any significant difference (mannwilkeneyu tests across values for German with or without: not significant)
+
+	Move coherence: 
+	Mean: 0.186897862078	Standard deviation: 0.274521946312
+	Max value: 1.0	Min value: 0.0
+	Move alignment: 
+	Mean: 0.0212946671422	Standard deviation: 0.083722798893
+	Max value: 0.666666666667	Min value: 0.0
+		
+
+	Move alignment e-utts: 
+	Mean: 0.0835496491526	Standard deviation: 0.224718090937
+	Max value: 1.0	Min value: 0.0
+	Move alignment p-utts: 
+	Mean: 0.0149524847032	Standard deviation: 0.0922447041359
+	Max value: 1.0	Min value: 0.0
+		Significant difference
+		Executors align more
+
+	Move coherence p-utts: 
+	Mean: 0.180738918687	Standard deviation: 0.270644245404
+	Max value: 1.0	Min value: 0.0
+	Move coherence e-utts: 
+	Mean: 0.158141685095	Standard deviation: 0.264605011675
+	Max value: 1.0	Min value: 0.0
+		Significant difference
+		Executors are more coherent.
+
+Differences between languages:2
+
+Move alignment p-utts
+MannwhitneyuResult(statistic=52457.0, pvalue=0.0073468634646158097)	Significantly different
+Move alignment
+MannwhitneyuResult(statistic=67459.5, pvalue=0.017214677782113833)	Significantly different
+
+
+Differences between players
+Players move alignment de
+MannwhitneyuResult(statistic=47266.0, pvalue=1.6275944940968661e-10)	Significantly different
+Players move alignment en
+MannwhitneyuResult(statistic=11171.5, pvalue=3.7834364682527649e-05)	Significantly different
+Players move alignment all
+MannwhitneyuResult(statistic=104374.0, pvalue=7.9260276997088966e-14)	Significantly different
+Players move coherence en
+MannwhitneyuResult(statistic=8007.0, pvalue=0.026256790617182005)	Significantly different
+Players move coherence all
+MannwhitneyuResult(statistic=72738.5, pvalue=0.021591146839438604)	Significantly different
+
+Not German :(
+
+GAME LEVEL
+
+The compound splitter does not make any significant difference (mannwilkeneyu tests across values for German with or without: not significant)
+
+	game coherence: 
+	Mean: 0.134070100749	Standard deviation: 0.190402509981
+	Max value: 1.0	Min value: 0.0
+	game alignment: 
+	Mean: 0.0232659951506	Standard deviation: 0.0740574547055
+	Max value: 0.555555555556	Min value: 0.0
+
+	game alignment p-utts: 
+	Mean: 0.0138619413232	Standard deviation: 0.0603148199168
+	Max value: 0.6	Min value: 0.0
+	game alignment e-utts: 
+	Mean: 0.0896615783936	Standard deviation: 0.207888702327
+	Max value: 1.0	Min value: 0.0
+		Significant difference
+		Executors align more
+
+	game coherence p-utts: 
+	Mean: 0.129730102562	Standard deviation: 0.187608389211
+	Max value: 1.0	Min value: 0.0
+	game coherence e-utts: 
+	Mean: 0.116856379367	Standard deviation: 0.176632522642
+	Max value: 1.0	Min value: 0.0
+		Not significant
+
+Differences between languages:2
+game coherence p-utts
+MannwhitneyuResult(statistic=11819.5, pvalue=0.0029206355271884027)	Significantly different
+game coherence
+MannwhitneyuResult(statistic=12459.5, pvalue=0.0013748832573113109)	Significantly different
+
+
+Differences between players
+Players game alignment de
+MannwhitneyuResult(statistic=12500.5, pvalue=3.3618879662564017e-08)	Significantly different
+Players game alignment en
+MannwhitneyuResult(statistic=5186.0, pvalue=1.0001926267641204e-05)	Significantly different
+Players game alignment all
+MannwhitneyuResult(statistic=33824.5, pvalue=2.0637382715642343e-12)	Significantly different
+Players game coherence en
+MannwhitneyuResult(statistic=5290.5, pvalue=0.015163946175734322)	Significantly different
