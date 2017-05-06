@@ -1,0 +1,96 @@
+
+
+---German---
+
+
+Alignment p-utts: 
+Mean: 0.125334379461	Standard deviation: 0.274491868877
+Max value: 0.857142857143	Min value: -0.714285714286
+Alignment: 
+Mean: 0.119894400262	Standard deviation: 0.272796712862
+Max value: 0.857142857143	Min value: -0.714285714286
+Alignment e-utts: 
+Mean: 0.136266563549	Standard deviation: 0.27681838222
+Max value: 0.857142857143	Min value: -0.714285714286
+
+---English---
+
+
+Alignment p-utts: 
+Mean: 0.110288887939	Standard deviation: 0.229964740594
+Max value: 0.846153846154	Min value: -0.571428571429
+Alignment: 
+Mean: 0.0952154319612	Standard deviation: 0.230235031267
+Max value: 0.846153846154	Min value: -0.571428571429
+Alignment e-utts: 
+Mean: 0.105525507044	Standard deviation: 0.243777371754
+Max value: 0.634920634921	Min value: -0.571428571429
+
+---English and German---
+
+
+Alignment p-utts: 
+Mean: 0.120511736305	Standard deviation: 0.261142057483
+Max value: 0.857142857143	Min value: -0.714285714286
+Alignment: 
+Mean: 0.111712305036	Standard deviation: 0.259720559155
+Max value: 0.857142857143	Min value: -0.714285714286
+Alignment e-utts: 
+Mean: 0.124873711937	Standard deviation: 0.265469457462
+Max value: 0.857142857143	Min value: -0.714285714286
+
+
+
+---Random---
+
+
+
+
+Alignment p-utts: 
+Mean: 0.0426976374736	Standard deviation: 0.266528410422
+Max value: 0.846153846154	Min value: -0.833333333333
+Alignment: 
+Mean: 0.0339083754967	Standard deviation: 0.242752702241
+Max value: 0.846153846154	Min value: -0.833333333333
+Alignment e-utts: 
+Mean: 0.0496564760151	Standard deviation: 0.262858500556
+Max value: 0.846153846154	Min value: -0.714285714286
+
+Significant differences with random:
+Alignment p-utts
+MannwhitneyuResult(statistic=165759.0, pvalue=1.2433716557314979e-08)
+All: 0.120511736305	Random: 0.0426976374736
+Alignment
+MannwhitneyuResult(statistic=190521.5, pvalue=2.7597292128294312e-11)
+All: 0.111712305036	Random: 0.0339083754967
+Alignment e-utts
+MannwhitneyuResult(statistic=61880.5, pvalue=2.705498976760076e-05)
+All: 0.124873711937	Random: 0.0496564760151
+
+
+
+
+---German without compound splitter---
+
+
+
+
+Alignment p-utts: 
+Mean: 0.126518466016	Standard deviation: 0.271744041241
+Max value: 0.857142857143	Min value: -0.666666666667
+Alignment: 
+Mean: 0.121482150287	Standard deviation: 0.271270300215
+Max value: 0.857142857143	Min value: -0.714285714286
+Alignment e-utts: 
+Mean: 0.136196951462	Standard deviation: 0.271095985783
+Max value: 0.857142857143	Min value: -0.714285714286
+
+
+
+Significant differences with and without compound splitter:
+
+
+Significant differences between languages:
+
+
+Significant differences between players:

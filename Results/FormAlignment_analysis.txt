@@ -1,0 +1,80 @@
+
+
+---German---
+
+
+Alignment p-utts: 
+Mean: 0.704540873908	Standard deviation: 0.349188315731
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.70487088191	Standard deviation: 0.327073298495
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.722099303247	Standard deviation: 0.360627429558
+Max value: 1.0	Min value: 0.0
+
+---English---
+
+
+Alignment p-utts: 
+Mean: 0.71585324351	Standard deviation: 0.289371532332
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.714459914457	Standard deviation: 0.282293848021
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.752243395234	Standard deviation: 0.345331183265
+Max value: 1.0	Min value: 0.0
+
+---English and German---
+
+
+Alignment p-utts: 
+Mean: 0.708120447251	Standard deviation: 0.331471884584
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.708038687305	Standard deviation: 0.313022022896
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.733221433739	Standard deviation: 0.355358167693
+Max value: 1.0	Min value: 0.0
+
+
+
+---Random---
+
+
+
+
+Alignment p-utts: 
+Mean: 0.660733858336	Standard deviation: 0.327461374944
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.643062628068	Standard deviation: 0.322669855714
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.649056052453	Standard deviation: 0.406948198608
+Max value: 1.0	Min value: 0.0
+
+Significant differences with random:
+Alignment p-utts
+MannwhitneyuResult(statistic=136617.5, pvalue=0.0026256865714374762)
+All: 0.708120447251	Random: 0.660733858336
+Alignment
+MannwhitneyuResult(statistic=178342.5, pvalue=5.8513667407702543e-05)
+All: 0.708038687305	Random: 0.643062628068
+Alignment e-utts
+MannwhitneyuResult(statistic=47009.5, pvalue=0.022542241971716184)
+All: 0.733221433739	Random: 0.649056052453
+
+
+Significant differences between languages:
+
+
+Significant differences between players:
+Alignment en
+MannwhitneyuResult(statistic=9736.5, pvalue=0.017924249714951129)
+p: 0.71585324351\e: 0.752243395234
+Alignment all
+MannwhitneyuResult(statistic=79001.0, pvalue=0.01074446433540494)
+p: 0.708120447251\e: 0.733221433739

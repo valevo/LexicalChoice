@@ -1,0 +1,96 @@
+
+
+---German---
+
+
+Alignment p-utts: 
+Mean: 0.414674074211	Standard deviation: 0.357164221722
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.41830445152	Standard deviation: 0.333837777053
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.445911104565	Standard deviation: 0.393730910318
+Max value: 1.0	Min value: 0.0
+
+---English---
+
+
+Alignment p-utts: 
+Mean: 0.463352753783	Standard deviation: 0.32780561905
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.467999489262	Standard deviation: 0.325626997383
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.513328748216	Standard deviation: 0.374278394634
+Max value: 1.0	Min value: 0.0
+
+---English and German---
+
+
+Alignment p-utts: 
+Mean: 0.430436694263	Standard deviation: 0.348673763927
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.43469762787	Standard deviation: 0.331975000742
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.46740231848	Standard deviation: 0.388906933838
+Max value: 1.0	Min value: 0.0
+
+
+
+---Random---
+
+
+
+
+Alignment p-utts: 
+Mean: 0.362267789768	Standard deviation: 0.316172535288
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.357262738365	Standard deviation: 0.305179449649
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.398654653312	Standard deviation: 0.365788979108
+Max value: 1.0	Min value: 0.0
+
+Significant differences with random:
+Alignment p-utts
+MannwhitneyuResult(statistic=96962.0, pvalue=0.0042311248692272624)
+All: 0.430436694263	Random: 0.362267789768
+Alignment
+MannwhitneyuResult(statistic=127356.0, pvalue=0.00023881624992284786)
+All: 0.43469762787	Random: 0.357262738365
+
+
+
+
+---German without compound splitter---
+
+
+
+
+Alignment p-utts: 
+Mean: 0.401525555651	Standard deviation: 0.353283224575
+Max value: 1.0	Min value: 0.0
+Alignment: 
+Mean: 0.409648027501	Standard deviation: 0.33252809117
+Max value: 1.0	Min value: 0.0
+Alignment e-utts: 
+Mean: 0.446232791425	Standard deviation: 0.397685455074
+Max value: 1.0	Min value: 0.0
+
+
+
+Significant differences with and without compound splitter:
+
+
+Significant differences between languages:
+Alignment
+MannwhitneyuResult(statistic=22717.5, pvalue=0.037662977390869275)
+German: 0.41830445152\English: 0.467999489262
+
+
+Significant differences between players:
