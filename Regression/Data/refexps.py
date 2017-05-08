@@ -27,16 +27,12 @@ def extract_info(dialogue):
             success = move.attrib['move_world']
         except:
             success = move.attrib['world']
-        try: 
-            confid = move.attrib['move_ground']
-        except:
-            confid = move.attrib['grounding_status']
         if len(id_move) == 2:
             id_move = (int(id_move[0]), int(id_move[1]))
         else:
             id_move = (int(id_move[0]), int(id_move[0]))
         moves_spans[i] = id_move
-        success_move[id_move] = (success, confid)
+        success_move[id_move] = success
         i += 1
     utt_tree = ET.parse(path.join(markables, dialogue + '_utterance_markables.xml'))
     utts_root = utt_tree.getroot()
