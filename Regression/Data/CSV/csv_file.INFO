@@ -16,5 +16,6 @@ confidence : encoded confidence level:
 language : language of move:
 		'english'
 		'german'
+move len: number of referring expressions in the move
 move ID : ID of the move, corresponding to the file name of the game appended witht he range of the move in the game
 
