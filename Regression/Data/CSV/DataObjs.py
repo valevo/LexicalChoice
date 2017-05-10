@@ -5,17 +5,18 @@ class Move:
     def __init__(self, move_struct, move_id=None, succs_map=None, conf_map=None):
         self.succs_lvl = succs_map(move_struct[0]) if succs_map else move_struct[0]
         self.conf_lvl = conf_map(move_struct[1]) if conf_map else move_struct[1]
-        self.len_all = move_struct[2][0]
-        self.len_p = move_struct[2][1]
-        self.len_e = move_struct[2][2]
+        self.length = move_struct[2]
+        self.len_all = move_struct[3][0]
+        self.len_p = move_struct[3][1]
+        self.len_e = move_struct[3][2]
 
-        self.lex_all = move_struct[3][0]
-        self.lex_p = move_struct[3][1]
-        self.lex_e = move_struct[3][2]
+        self.lex_all = move_struct[4][0]
+        self.lex_p = move_struct[4][1]
+        self.lex_e = move_struct[4][2]
 
-        self.form_all = move_struct[4][0]
-        self.form_p = move_struct[4][1]
-        self.form_e = move_struct[4][2]
+        self.form_all = move_struct[5][0]
+        self.form_p = move_struct[5][1]
+        self.form_e = move_struct[5][2]
 
         self.move_id = move_id
 
