@@ -262,3 +262,182 @@ def gamerun_level(d_refexps):
         new[t] = sorted(new[t], key=lambda tup: tup[0][0])
     return new
 
+
+from os import path
+import xml.etree.ElementTree as ET
+from collections import defaultdict
+from os import path, listdir, makedirs, stat
+import re
+import pickle
+
+#def get_text_move(move_id, corpus_dir):
+def get_move_text(move_game_id, corpus_dir):
+    '''
+    Print the text of a move and the referring expressions for  each object
+    param move_game_id : id of the move e.g., '20070201_run3pento_nonoise_refexps.p(530, 853)'
+    param corpus_dir: path to folder with Pento Corpus
+    '''
+    if move_game_id.startswith('FTT'):
+        corpus_dir = path.join(corpus_dir, 'Push_to_Talk_Corpus')
+    else:
+        corpus_dir = path.join(corpus_dir, 'Disruption_with_Noise_Corpus')
+    i = move_game_id.index('(')
+    move_id = move_game_id[i:]
+    game_id = move_game_id.replace(move_id, '').replace('_refexps.p', '')
+    basedata = path.join(corpus_dir, 'Basedata')
+    markables = path.join(corpus_dir,'Markables')
+    words_tree = ET.parse(path.join(basedata, game_id + '_words.xml'))
+    words_root = words_tree.getroot()
+    words = {}
+    for word in words_root:
+        words[int(word.attrib['id'].strip('word_'))] = word.text
+    #moves
+    moves_tree = ET.parse(path.join(markables, game_id + '_move_markables.xml'))
+    moves_root = moves_tree.getroot()
+    moves_spans = defaultdict(list)
+    i = 0
+    for move in moves_root:
+        id_move = move.attrib['span'].replace('word_', '').split('..')
+        if len(id_move) == 2:
+            id_move = (int(id_move[0]), int(id_move[1]))
+        else:
+            id_move = (int(id_move[0]), int(id_move[0]))
+        moves_spans[i] = id_move
+        i += 1
+    utt_tree = ET.parse(path.join(markables, game_id + '_utterance_markables.xml'))
+    utts_root = utt_tree.getroot()
+    utts_speaker = defaultdict(list)
+    for utt in utts_root:
+        span =  utt.attrib['span'].replace('word_', '').split('..')
+        if len(span) == 2:
+            span = (int(span[0]), int(span[1]))
+        else:
+            span = (int(span[0]), int(span[0]))
+        speaker =  utt.attrib['speaker']
+        utts_speaker[speaker].append(span)
+    #associate referring expressions to objects
+    ref_tree = ET.parse(path.join(markables, game_id + '_ref_markables.xml'))
+    refs_root = ref_tree.getroot()
+    refs_objects = defaultdict(list)
+    for ref in refs_root:
+        ref_type = ref.attrib['referent_type']
+        form =  ref.attrib['form']
+        span =  ref.attrib['span'].replace('word_', '').split('..')
+        if len(span) == 2:
+            span = (int(span[0]), int(span[1]))
+        else:
+            span = (int(span[0]), int(span[0]))
+        try:
+            item =  ref.attrib['item_id']
+            refs_objects[item].append((span, form, ref_type))
+        except:
+            pass
+    moves_utt = defaultdict(dict)
+    for s in utts_speaker:
+        for utt in utts_speaker[s]:
+            for m in moves_spans:
+                if utt[0] >= moves_spans[m][0] and utt[0] <= moves_spans[m][1]:
+                    if not moves_utt[moves_spans[m]].has_key(s):
+                        moves_utt[moves_spans[m]][s] = []
+                    moves_utt[moves_spans[m]][s].append(utt)
+    moves_ref = defaultdict(dict)
+    for obj in refs_objects:
+        speaker = ''
+        move = ''
+        for ref in refs_objects[obj]:
+            word_span = ref[0]
+            for m in moves_utt:
+                for s in moves_utt[m]:
+                    for utt in moves_utt[m][s]:
+                        if word_span[0] >= utt[0] and word_span[0] <= utt[1]:
+                            speaker = s
+                            move = m
+                            if not moves_ref[move].has_key(speaker):
+                                moves_ref[move][speaker] = {}
+                            if not moves_ref[move][speaker].has_key(obj):
+                                moves_ref[move][speaker][obj] = []
+                            moves_ref[move][speaker][obj].append(ref)
+                            break
+
+    #data structure: ['(p, utt), (e, utt)']
+    utt_to_speaker = {}
+    utt_to_words = {}
+    moves_text = []
+    moves_utterances = []
+    for s in moves_utt[eval(move_id)]:
+        for utt in moves_utt[eval(move_id)][s]:
+            span = utt
+            if len(span) == 1:
+                utt_words = words[span[0]]
+            else:
+                utt_words = ''
+                i = span[0]
+                while i <= span[1]:
+                    if i != span[1]:
+                        utt_words += words[i] + ' '
+                    else:
+                        utt_words += words[i]
+                    i += 1
+            if utt in utts_speaker['p-utts']:
+                speaker = 'p-utts'
+            else:
+                speaker = 'e-utts'
+            utt_to_speaker[utt] = speaker
+            utt_to_words[utt] = utt_words
+            moves_utterances.append(utt)
+    moves_spans = sorted(moves_utterances, key = lambda x: x[0])
+    for x in moves_spans:
+        print (utt_to_speaker[x]+ '\t' + str(x)+':\t' + utt_to_words[x])
+    print '\n\n ------------------------------\n\n'
+    moves_ref = defaultdict(dict)
+    for obj in refs_objects:
+        speaker = ''
+        move = ''
+        for ref in refs_objects[obj]:
+            word_span = ref[0]
+            for m in moves_utt:
+                for s in moves_utt[m]:
+                    for utt in moves_utt[m][s]:
+                        if word_span[0] >= utt[0] and word_span[0] <= utt[1]:
+                            speaker = s
+                            move = m
+                            if not moves_ref[move].has_key(speaker):
+                                moves_ref[move][speaker] = {}
+                            if not moves_ref[move][speaker].has_key(obj):
+                                moves_ref[move][speaker][obj] = []
+                            moves_ref[move][speaker][obj].append(ref)
+                            break
+    moves_ref_words = defaultdict(list)
+    for s in moves_ref[eval(move_id)]:
+        for o in moves_ref[eval(move_id)][s]:
+            for ref in moves_ref[eval(move_id)][s][o]:
+                span = ref[0]
+                form = ref[1]
+                ref_type = ref[2]
+                obj_id = o + '_'+ ref_type
+                if len(span) == 1:
+                    exp = words[span[0]]
+                else:
+                    exp = ''
+                    i = span[0]
+                    while i <= span[1]:
+                        if i != span[1]:
+                            exp += words[i] + ' '
+                        else:
+                            exp += words[i]
+                        i += 1
+                exp = re.sub(r'<.*>', '', exp)
+                exp = re.sub(r'</.*>', '', exp)
+                exp = re.sub(r'\(.*\)', '', exp)
+                exp = re.sub(r'[\(\)\[\]\.]','', exp)
+                exp = exp.lower()
+                exp_sp = exp.split(' ')
+                if len(exp_sp) == 1 and exp.endswith("'s"):
+                    exp = exp.replace("'s", '')
+                moves_ref_words[obj_id].append((exp, span, form))
+    for o in moves_ref_words:
+        moves_ref_words[o] = sorted(moves_ref_words[o], key=lambda tup: tup[1][0])
+        print o
+        for ref in moves_ref_words[o]:
+            print '\t'+ str(ref)
+
