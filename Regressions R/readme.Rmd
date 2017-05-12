@@ -1,0 +1,112 @@
+---
+title: "Regression Procedure and Results"
+output: html_document
+---
+
+# Goals
+	
+* find out which predictors are the most informative for success/confidence
+* obtain type and magnitude of relationship with success/confidence
+
+
+
+# Data
+
+* for each move:  
+&nbsp;&nbsp;for each speaker role and across both speakers:  
+&nbsp;&nbsp;&nbsp;&nbsp;for each of the three levels of alignment:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for each co-reference chain in the move:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obtain a value in terms of the level of alignment for the speaker and the co-reference chain
+
+* mean and variance over the values for the co-reference chains  
+(i.e. 3 times 3 times 2 values for each move; one move is considered a data point)
+
+	
+* success (correct, incorrect, not moved) and confidence (confident, unconfident, reconfirm, on hold) level of each move
+
+* number of referring expression of each move
+
+* (language and move ID of each move)
+
+
+# Strategy
+
+## Predictor Selection
+
+### Rationale:
+
+* consider the mean value of alignment of each speaker role and level of alignment in a move as the main predictor
+	
+* consider the levels of success and confidence as factual and perceived task success, respectively;  
+perceived task success may be better predicted by the levels of linguistic alignment since a speaker may be confident to have achieved grouding without this factually being the case
+
+* three types of interactions of the mean with other factors are reasonable:  
+  
+    1. the variance: high variance indicates low consistency of alignment across              co-reference chains in a given move, which may in turn signal issues in grounding on      the communicative level (since all co-reference chains in a move refer to the same        physical object);  
+    hence, not only the mean but also the variance of the aligment per co-reference chain     can in principle be informative about the level of success/confidence achieved
+
+    2. with itself: which is equivalent to a quadratic transformation of the mean             (transformed and then entered as a predictor);  
+    introduces non-linearity and hence allows for non-monotone relationship between the       value of alignment and success/confidence, specifically the quadratic predictor allows     for a unimodal function of success/confidence;  
+    at least for some of the levels of alignment, this may be more plausible, since e.g.      at the lexical level full alignment amounts to reiterating previously communicated        information (which could be caused by a reconfirmation);  
+    hence, it may be the case that higher or lower values of alignment do not in general      contribute to success/confidence but intermediate ones
+
+    3. with the number of referring expressions in a move: high numbers are the result of     longer co-reference chains;  
+    leads to higher chance of high levels of success/confidence since the interlocutors       have more opportunities to communicate information to achieve grounding
+
+### Procedure:
+* interactions yield four types of predictors for every per-speaker-role mean alignment value: individual mean, interaction mean-variance, squared mean, interaction mean-number of referring expressions (interactions are encoded by multiplication, and hence represent their own dimension in a multivariate model)
+
+* select informative levels of alignment and speaker roles while taking these types of interactions into account
+
+* base selection on persistence across the following models
+
+* construct models with all possible combinations of the three interactions: none, one, two, three (yields 2^3 models)
+
+* use leap and stepwise AIC (both functions from R) to perform stepwise predictor selection  
+
+    - leap: constructs models from all subsets of predictors (from 1 up to size 8, keeps 5     best) and computes their adjusted R^2 in order to compare them
+  
+    - stepAIC: omits predictors one-by-one from the full model and computes the AIC values     of the resulting models, then uses these to construct a final model
+	
+* for each predictor (i.e. per-speaker-role, per-interaction-type mean alignment value) count the number of occurrences among
+		best predictors as returned by leap and stepwise AIC and divide by the number of possible ocurrences
+
+### Results:
+- length general: 9/16 possible occurrences among best predictors
+- lexical IF: 16/16 
+- interaction length IF - number referring expressions: 7/8
+- squared lexical general: 8/8
+- squared lexical IG: 7/8
+- squared lexical IF: 6/8
+- interaction lexical IG - variance: 7/8
+
+- all other predictors were less or equal to half the time among the best predictors
+				
+	
+## Regression
+
+* use these 7 selected predictors to preform the final regression
+* predictors scaled before regression, ensures that coefficients are on the same
+* see regression.html for the summary of the results
+
+### Results:
+
+  - general length and lexical IF have the following interpretation: with their negative coefficients, both contribute _positively_ to higher levels of confidence (this is due to the logistic function, the inverse link function for logistic regression models)
+    
+  - the squared terms relate to confidence in the following way: if the coefficient is negative, then the parabola's centre is its mode, and the further from the centre, the lower the resulting probability of a high level of confidence. if the coefficient is positive, the relationship is reversed
+    
+  - the interaction terms (number referring expressions - length IF, and mean - variance of lexical IG) are more intricate to interpret. these will follow
+    
+  - as can be seen from the p-values of the t-statistic, except for squared lexical IG, all predictors are significant, backing the selection of predictors
+  
+  - the adjusted R-squared value is rather low, however, with the expected number and influences of confounding variables, it is not necessarily expected to achieve good model fit
+  
+### Interpretations
+
+  - most prominently, of the three alignment levels, lexical seems to be most informative about confidence levels; specifically, this can be seen from the following: lexical IF is the most dominant predictor across models in the predictor selection procedure and its coefficient has the greatest absolute value, all the squared lexical variables are among the most often selected predictors, and in testing differences in the distributions grouped by confidence level, lexical is the only of the three variables of alignment for which the difference is significant
+    
+    
+
+
+
+

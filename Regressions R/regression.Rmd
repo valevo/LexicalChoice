@@ -1,0 +1,40 @@
+---
+title: "Regression"
+output: html_document
+---
+
+```{r echo=FALSE}
+
+library(pls)
+library(leaps)
+library(MASS)
+
+
+data <- read.csv("data_regression.csv", header = TRUE)
+
+scale_cols = names(data)[0:18]
+no_scale_cols = names(data)[19:23]
+
+scaled_data = scale(data[scale_cols])
+scaled_data[is.na.data.frame(scaled_data)] <- 0
+
+scaled_data <- data.frame(scaled_data)
+scaled_data[no_scale_cols] <- data[no_scale_cols]
+
+lexical.general.mean.sq <- scaled_data$lexical.general.mean**2
+lexical.IG.mean.sq <- scaled_data$lexical.IG.mean**2
+lexical.IF.mean.sq <- scaled_data$lexical.IF.mean**2
+
+names(scaled_data)
+
+```
+
+
+```{r}
+
+model_f <- confidence ~ length.general.mean + lexical.IF.mean + move.len:length.IF.mean + lexical.general.mean.sq + lexical.IG.mean.sq + lexical.IF.mean.sq + lexical.IG.mean:lexical.IG.var
+
+model <- lm(model_f, data=scaled_data)
+
+summary(model)
+```

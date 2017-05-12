@@ -1,0 +1,286 @@
+---
+title: "Predictor Selection"
+output: html_document
+---
+
+```{r echo=FALSE}
+
+library(pls)
+library(leaps)
+library(MASS)
+
+data <- read.csv("data_regression.csv", header = TRUE)
+
+scale_cols = names(data)[0:18]
+no_scale_cols = names(data)[19:23]
+
+scaled_data = scale(data[scale_cols])
+scaled_data[is.na.data.frame(scaled_data)] <- 0
+
+scaled_data <- data.frame(scaled_data)
+scaled_data[no_scale_cols] <- data[no_scale_cols]
+
+names(scaled_data)
+
+length.general.mean.sq <- scaled_data$length.general.mean**2
+length.IG.mean.sq <- scaled_data$length.IG.mean**2
+length.IF.mean.sq <- scaled_data$length.IF.mean**2
+lexical.general.mean.sq <- scaled_data$lexical.general.mean**2
+lexical.IG.mean.sq <- scaled_data$lexical.IG.mean**2
+lexical.IF.mean.sq <- scaled_data$lexical.IF.mean**2
+form.general.mean.sq <- scaled_data$form.general.mean**2
+form.IG.mean.sq <- scaled_data$form.IG.mean**2
+form.IF.mean.sq <- scaled_data$form.IF.mean**2
+
+```
+
+
+
+**Interactions**
+
+
+
+**Persistence tests**
+
+```{r}
+# level zero: mean
+formula0 <- confidence ~ length.general.mean + length.IG.mean + length.IF.mean + 
+           lexical.general.mean + 
+           lexical.IG.mean + 
+           lexical.IF.mean + 
+           form.general.mean + 
+           form.IG.mean + 
+           form.IF.mean
+
+  
+m0 <- lm(formula0, data=scaled_data)
+
+summary(m0)
+stepAIC(m0)$anova
+
+leaps<-regsubsets(formula0, data=scaled_data, nbest=5)
+plot(leaps,scale="adjr")
+```
+
+
+
+
+```{r}
+# 1. move.len*mean
+# 2. mean + mean^2
+# 3. mean + mean:var
+# 4. move.len*mean + mean^2 .
+# 5. move.len*mean + mean:var .
+# 6. mean^2 + mean:var
+# 7. move.len*mean + mean^2 + mean:var
+
+
+# all individual interactions
+# 1. move.len*mean
+formula_mvl_1 <- confidence ~ move.len*(
+          length.general.mean + 
+          length.IG.mean + 
+          length.IF.mean + 
+          lexical.general.mean + 
+          lexical.IG.mean + 
+          lexical.IF.mean + 
+          form.general.mean + 
+          form.IG.mean + 
+          form.IF.mean)
+
+m_mvl_1 <- lm(formula_mvl_1, data=scaled_data)
+
+
+summary(m_mvl_1)
+stepAIC(m_mvl_1)$anova
+
+leaps<-regsubsets(formula_mvl_1, data=scaled_data, nbest=3, really.big = TRUE)
+plot(leaps,scale="adjr")
+
+# 2. mean + mean^2
+formula_mvl_6 <- confidence ~ length.general.mean + 
+          length.IG.mean + 
+          length.IF.mean + 
+          lexical.general.mean + 
+          lexical.IG.mean + 
+          lexical.IF.mean + 
+          form.general.mean + 
+          form.IG.mean + 
+          form.IF.mean +
+          length.general.mean.sq + 
+          length.IG.mean.sq + 
+          length.IF.mean.sq + 
+          lexical.general.mean.sq + 
+          lexical.IG.mean.sq + 
+          lexical.IF.mean.sq + 
+          form.general.mean.sq + 
+          form.IG.mean.sq + 
+          form.IF.mean.sq
+
+m_mvl_6 <- lm(formula_mvl_6, data=scaled_data)
+
+summary(m_mvl_6)
+stepAIC(m_mvl_6)$anova
+
+leaps<-regsubsets(formula_mvl_6, data=scaled_data, nbest=3, really.big = TRUE)
+plot(leaps,scale="adjr")
+
+
+# 3. mean + mean:var
+formula_mvl_7 <- confidence ~ length.general.mean + 
+          length.IG.mean + 
+          length.IF.mean + 
+          lexical.general.mean + 
+          lexical.IG.mean + 
+          lexical.IF.mean + 
+          form.general.mean + 
+          form.IG.mean + 
+          form.IF.mean +
+          length.general.mean:length.general.var + 
+          length.IG.mean:length.IG.var  + 
+          length.IF.mean:length.IF.var + 
+          lexical.general.mean:lexical.general.var + 
+          lexical.IG.mean:lexical.IG.var + 
+          lexical.IF.mean:lexical.IF.var + 
+          form.general.mean:form.general.var + 
+          form.IG.mean:form.IG.var + 
+          form.IF.mean:form.IF.var
+
+m_mvl_7 <- lm(formula_mvl_7, data=scaled_data)
+
+summary(m_mvl_7)
+stepAIC(m_mvl_7)$anova
+
+leaps<-regsubsets(formula_mvl_7, data=scaled_data, nbest=3, really.big = TRUE)
+plot(leaps,scale="adjr")
+```
+
+
+```{r}
+# all pairs of two interactions
+# 4. move.len*mean + mean^2
+formula_mvl_2 <- confidence ~ move.len*(
+          length.general.mean + 
+          length.IG.mean + 
+          length.IF.mean + 
+          lexical.general.mean + 
+          lexical.IG.mean + 
+          lexical.IF.mean + 
+          form.general.mean + 
+          form.IG.mean + 
+          form.IF.mean) + 
+          length.general.mean.sq + 
+          length.IG.mean.sq + 
+          length.IF.mean.sq + 
+          lexical.general.mean.sq + 
+          lexical.IG.mean.sq + 
+          lexical.IF.mean.sq + 
+          form.general.mean.sq + 
+          form.IG.mean.sq + 
+          form.IF.mean.sq
+
+m_mvl_2 <- lm(formula_mvl_2, data=scaled_data)
+
+
+summary(m_mvl_2)
+stepAIC(m_mvl_2)$anova
+
+leaps<-regsubsets(formula_mvl_2, data=scaled_data, nbest=3, really.big = TRUE)
+plot(leaps,scale="adjr")
+
+# 5. move.len*mean + mean:var
+formula_mvl_3 <- confidence ~ move.len*(
+          length.general.mean + 
+          length.IG.mean + 
+          length.IF.mean + 
+          lexical.general.mean + 
+          lexical.IG.mean + 
+          lexical.IF.mean + 
+          form.general.mean + 
+          form.IG.mean + 
+          form.IF.mean) +
+          length.general.mean:length.general.var + 
+          length.IG.mean:length.IG.var  + 
+          length.IF.mean:length.IF.var + 
+          lexical.general.mean:lexical.general.var + 
+          lexical.IG.mean:lexical.IG.var + 
+          lexical.IF.mean:lexical.IF.var + 
+          form.general.mean:form.general.var + 
+          form.IG.mean:form.IG.var + 
+          form.IF.mean:form.IF.var
+
+m_mvl_3 <- lm(formula_mvl_3, data=scaled_data)
+
+
+summary(m_mvl_3)
+stepAIC(m_mvl_3)$anova
+
+leaps<-regsubsets(formula_mvl_3, data=scaled_data, nbest=3, really.big = TRUE)
+plot(leaps,scale="adjr")
+
+# 6. mean + mean^2 + mean:var
+formula4 <- confidence ~ 
+  length.general.mean + length.general.mean.sq  + length.general.mean:length.general.var+
+           length.IG.mean + length.IG.mean.sq + length.IG.mean:length.IG.var  + 
+           length.IF.mean + length.IF.mean.sq + length.IF.mean:length.IF.var + 
+           lexical.general.mean + lexical.general.mean.sq +     
+              lexical.general.mean:lexical.general.var + 
+           lexical.IG.mean + lexical.IG.mean.sq + lexical.IG.mean:lexical.IG.var + 
+           lexical.IF.mean + lexical.IF.mean.sq + lexical.IF.mean:lexical.IF.var + 
+           form.general.mean + form.general.mean.sq + form.general.mean:form.general.var+
+           form.IG.mean + form.IG.mean.sq + form.IG.mean:form.IG.var + 
+           form.IF.mean + form.IF.mean.sq + form.IF.mean:form.IF.var
+
+m4 <- lm(formula4, data=scaled_data)
+
+summary(m4)
+stepAIC(m4)$anova
+
+leaps<-regsubsets(formula4, data=scaled_data, nbest=5)
+plot(leaps,scale="adjr")
+```
+
+
+```{r}
+# all three interactions
+
+# 7. move.len*mean + mean:var + mean^2
+formula_mvl_5 <- confidence ~ move.len*(
+          length.general.mean + 
+          length.IG.mean + 
+          length.IF.mean + 
+          lexical.general.mean + 
+          lexical.IG.mean + 
+          lexical.IF.mean + 
+          form.general.mean + 
+          form.IG.mean + 
+          form.IF.mean) +
+          length.general.mean:length.general.var + 
+          length.IG.mean:length.IG.var  + 
+          length.IF.mean:length.IF.var + 
+          lexical.general.mean:lexical.general.var + 
+          lexical.IG.mean:lexical.IG.var + 
+          lexical.IF.mean:lexical.IF.var + 
+          form.general.mean:form.general.var + 
+          form.IG.mean:form.IG.var + 
+          form.IF.mean:form.IF.var +
+          length.general.mean.sq + 
+          length.IG.mean.sq + 
+          length.IF.mean.sq + 
+          lexical.general.mean.sq + 
+          lexical.IG.mean.sq + 
+          lexical.IF.mean.sq + 
+          form.general.mean.sq + 
+          form.IG.mean.sq + 
+          form.IF.mean.sq
+
+m_mvl_5 <- lm(formula_mvl_5, data=scaled_data)
+
+summary(m_mvl_5)
+stepAIC(m_mvl_5)$anova
+
+leaps<-regsubsets(formula_mvl_5, data=scaled_data, nbest=3, really.big = TRUE)
+plot(leaps,scale="adjr")
+```
+
+
